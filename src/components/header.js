@@ -1,85 +1,76 @@
-import React from "react"
-import styled from 'styled-components'
-import { navLinks } from '../config';
+import React from "react";
+import styled from "styled-components";
+import { navLinks, colors } from '@config';
+import { mixins } from '@styles';
 
 const Nav = styled.div`
-  background-color: #fff;
+  background-color: #0a192f;
   border-bottom: 1px solid rgba(0, 0, 0, 0.9975);
-`;
- 
-const NavHeader = styled.div`
-  max-width: 1010px;
-  padding: 26px 20px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
   width: 100%;
-  display: flex;
-  align-items: center;
-  margin: 0 auto;
-`;
- 
-const NavLeft = styled.div`
-  width: 33.333%;
-  text-align: left;
-`;
- 
-const NavCenter = styled.div`
-  width: 33.333%;
-  text-align: center;
-`;
- 
-const Input = styled.input`
-  font-size: 16px;
-  border: solid 1px #dbdbdb;
-  border-radius: 3px;
-  color: #262626;
-  padding: 7px 33px;
-  border-radius: 3px;
-  color: #999;
-  cursor: text;
-  font-size: 14px;
-  font-weight: 300;
-  text-align: center;
-  background: #fafafa;
- 
-  &:active,
-  &:focus {
-    text-align: left;
-  }
-`;
- 
-const NavRight = styled.div`
-  width: 33.333%;
-  text-align: right;
- 
-  svg {
-    margin-right: 20px;
-  }
-`;
+  height: 100vh;
+  z-index: 10;
+  outline: 0;
+`
 
-const MenuLink = styled.a``;
- 
+const Sidebar = styled.aside`
+  ${mixins.flexCenter};
+  flex-direction: column;
+  background-color: ${colors.lightNavy};
+  padding: 50px;
+  width: 50vw;
+  height: 100%;
+  position: relative;
+  right: 0;
+  margin-left: auto;
+`
+
+const NavLinks = styled.nav`
+  ${mixins.flexBetween};
+  color: #0a192f;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+`
+
+const NavList = styled.ol`
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  width: 100%;
+`
+
+const NavListItem = styled.li`
+  color: #64ffda;
+  margin: 0 auto 20px;
+  position: relative;
+`
+
+const MenuLink = styled.a`
+  ${mixins.link};
+  padding: 3px 20px 20px;
+  width: 100%;
+`
+
 function Header() {
   return (
     <Nav>
-      <NavHeader>
-        <NavLeft>RK Logo</NavLeft>
- 
-        <NavRight>
-          <MenuLink href="#">
-            test
-          </MenuLink>
- 
-          <MenuLink href="#">
-            test
-          </MenuLink>
- 
-          <MenuLink href="#">
-            test
-          </MenuLink>
-        </NavRight>
-      </NavHeader>
+      <Sidebar>
+        <NavLinks>
+          <NavList>
+            {navLinks.map(({ url, name }) => (
+              <NavListItem>
+                <MenuLink to={url}>{name}</MenuLink>
+              </NavListItem>
+            ))}
+          </NavList>
+        </NavLinks>
+      </Sidebar>
     </Nav>
-  );
+  )
 }
-
 
 export default Header
