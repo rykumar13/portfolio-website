@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { navLinks, colors } from '../config';
+import { navLinks, colors } from '@config';
 
 const StyledContainer = styled.div`
   background-color: #020c1b;
