@@ -1,22 +1,41 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from "react";
+import { graphql } from 'gatsby';
+import PropTypes from 'prop-types';
+import { Main } from '@styles';
+import styled from 'styled-components';
+import { Layout, Hero } from '@components';
 
-import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
+const StyledMainContainer = styled(Main)`
+  counter-reset: section;
+`;
 
-const IndexPage = () => (
+const IndexPage = ({data}) => (
   <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link> <br />
-    <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
+    <StyledMainContainer className="fillHeight">
+    <Hero data={data.hero.edges} />
+    </StyledMainContainer>
   </Layout>
 )
 
+IndexPage.propTypes = {
+  data: PropTypes.object.isRequired,
+};
+
 export default IndexPage
+
+export const pageQuery = graphql`
+  {
+    hero: allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/hero/" } }) {
+      edges {
+        node {
+          frontmatter {
+            title
+            name
+            subtitle
+            buttonText
+          }
+          html
+        }
+      }
+    }
+  }`;
