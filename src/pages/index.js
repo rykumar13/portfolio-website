@@ -15,13 +15,13 @@ const IndexPage = ({data}) => (
     <Hero data={data.hero.edges} />
     </StyledMainContainer>
   </Layout>
-)
+);
 
 IndexPage.propTypes = {
   data: PropTypes.object.isRequired,
 };
 
-export default IndexPage
+export default IndexPage;
 
 export const pageQuery = graphql`
   {
