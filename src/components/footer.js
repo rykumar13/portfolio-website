@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import { mixins, Section } from "@styles"
+import { mixins } from "@styles"
 
 const StyledContainer = styled.footer`
   ${mixins.flexCenter};

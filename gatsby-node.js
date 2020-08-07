@@ -7,6 +7,11 @@
 // You can delete this file if you're not using it
 // https://www.gatsbyjs.org/docs/node-apis/#onCreateWebpackConfig
 const path = require('path');
+const _ = require('lodash');
+
+exports.createPages = async ({ actions, graphql, reporter }) => {
+  const { createPage } = actions;
+}
 
 exports.onCreateWebpackConfig = ({ actions }) => {
     // https://www.gatsbyjs.org/docs/debugging-html-builds/#fixing-third-party-modules

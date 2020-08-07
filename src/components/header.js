@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { navLinks, colors } from '@config';
+import { navLinks } from '@config';
 
 const StyledContainer = styled.div`
   background-color: #020c1b;
@@ -29,7 +29,7 @@ const StyledName = styled.h3`
   margin: 10px 10px 10px 10px
 `
 
-function Header() {
+const Header = () => {
   return (
     <StyledContainer>
       <StyledName>
@@ -46,4 +46,4 @@ function Header() {
   )
 }
 
-export default Header
+export default Header;
