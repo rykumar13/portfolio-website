@@ -68,7 +68,7 @@ const Layout = ({ children }) => {
       render={({ site }) => (
         <div id="root">
           <GlobalStyle />
-
+          
           <SkipToContent href="#content">Skip to Content</SkipToContent>
 
           <StyledContent>

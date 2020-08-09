@@ -61,10 +61,9 @@ const Hero = ({ data }) => {
 
   return (
     <StyledContainer>
-      {<StyledOverline>{frontmatter.title}</StyledOverline>}
+      <StyledOverline>{frontmatter.title}</StyledOverline>
       <StyledTitle>{frontmatter.name}.</StyledTitle>
       <StyledSubtitle>{frontmatter.subtitle}</StyledSubtitle>
-
       <StyledDescription dangerouslySetInnerHTML={{ __html: html }} />
       <div>
         <StyledEmailLink href={`mailto:${email}`}>Get In Touch</StyledEmailLink>
