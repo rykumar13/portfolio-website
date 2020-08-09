@@ -101,7 +101,7 @@ const StyledJobDetails = styled.h5`
   }
 `;
 
-const Work = ({ data }) => {
+const Experience = ({ data }) => {
   const [activeTabId, setActiveTabId] = useState(0);
   const [tabFocus, setTabFocus] = useState(null);
   const tabs = useRef([]);
@@ -201,8 +201,8 @@ const Work = ({ data }) => {
   );
 };
 
-Work.propTypes = {
+Experience.propTypes = {
   data: PropTypes.array.isRequired,
 };
 
-export default Work;
+export default Experience;

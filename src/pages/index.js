@@ -3,7 +3,7 @@ import { graphql } from 'gatsby';
 import PropTypes from 'prop-types';
 import { Main } from '@styles';
 import styled from 'styled-components';
-import { Layout, Hero, About, Work } from '@components';
+import { Layout, Hero, About, Experience, Projects, Contact } from '@components';
 
 const StyledMainContainer = styled(Main)`
   counter-reset: section;
@@ -14,7 +14,9 @@ const IndexPage = ({data}) => (
     <StyledMainContainer className="fillHeight">
     <Hero data={data.hero.edges} />
     <About data={data.about.edges} />
-    <Work data={data.work.edges} />
+    <Experience data={data.experience.edges} />
+    <Projects data={data.projects.edges} />
+    <Contact data={data.contact.edges} />
     </StyledMainContainer>
   </Layout>
 );
@@ -62,8 +64,8 @@ export const pageQuery = graphql`
       }
     }
 
-    work: allMarkdownRemark(
-      filter: { fileAbsolutePath: { regex: "/work/" } }
+    experience: allMarkdownRemark(
+      filter: { fileAbsolutePath: { regex: "/experience/" } }
       sort: { fields: [frontmatter___date], order: DESC }
     ) {
       edges {
@@ -74,6 +76,38 @@ export const pageQuery = graphql`
             location
             range
             url
+          }
+          html
+        }
+      }
+    }
+
+    projects: allMarkdownRemark(
+      filter: {
+        fileAbsolutePath: { regex: "/projects/" }
+        frontmatter: { showInProjects: { ne: false } }
+      }
+      sort: { fields: [frontmatter___date], order: DESC }
+    ) {
+      edges {
+        node {
+          frontmatter {
+            title
+            tech
+            github
+            external
+          }
+          html
+        }
+      }
+    }
+
+    contact: allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/contact/" } }) {
+      edges {
+        node {
+          frontmatter {
+            title
+            buttonText
           }
           html
         }
