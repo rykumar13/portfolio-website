@@ -12,6 +12,7 @@ import styled from "styled-components"
 import { GlobalStyle, theme } from '@styles';
 import Footer from "./footer"
 import Header from "./header"
+import { Email } from '@components';
 import "./layout.css"
 const { colors, fontSizes, fonts } = theme;
 
@@ -73,6 +74,7 @@ const Layout = ({ children }) => {
 
           <StyledContent>
             <Header />
+            <Email />
             <div id="content">
               {children}
               <Footer />
