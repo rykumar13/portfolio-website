@@ -7,8 +7,8 @@ const Main = styled.main`
   width: 100%;
   max-width: 1600px;
   min-height: 100vh;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 `;
 
 export default Main;

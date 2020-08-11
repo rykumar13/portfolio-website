@@ -27,7 +27,6 @@ const GlobalStyle = createGlobalStyle`
     background-color: ${colors.navy};
     color: ${colors.slate};
     line-height: 1.3;
-
   }
 
   #root {
