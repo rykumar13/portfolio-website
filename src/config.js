@@ -7,17 +7,17 @@ siteDescription:
   siteUrl: 'https://localhost:8000',
 name: 'Rajiv Kumar',
 location: 'London, UK',
-email: 'Rajiv .Kumar@gmail.com',
-github: 'https://github.com/rajivkumar13',
+email: 'rykumar13@gmail.com',
+github: 'https://github.com/rykumar13',
 twitterHandle: '@r_for_rajiv',
 socialMedia: [
   {
     name: 'GitHub',
-    url: 'https://github.com/rajivkumar13',
+    url: 'https://github.com/rykumar13',
   },
   {
     name: 'Linkedin',
-    url: 'https://www.linkedin.com/in/rajivk7',
+    url: 'https://www.linkedin.com/in/rajiv-kumar-6b2410a3/',
   },
   {
     name: 'Instagram',

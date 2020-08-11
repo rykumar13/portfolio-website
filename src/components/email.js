@@ -20,6 +20,7 @@ const StyledLinkWrapper = styled.div`
     background-color: ${colors.lightSlate};
   }
 `;
+
 const StyledEmailLink = styled.a`
   font-family: ${fonts.SFMono};
   font-size: ${fontSizes.xs};
@@ -42,7 +43,7 @@ const Email = () => (
   </Side>
 );
 Email.propTypes = {
-  isHome: PropTypes.bool,
+  //isHome: PropTypes.bool,
 };
 
 export default Email;

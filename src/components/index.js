@@ -5,4 +5,6 @@ export { default as Projects } from './sections/projects';
 export { default as Contact } from './sections/contact';
 export { default as Header } from './header';
 export { default as Email } from './email';
+export { default as Social } from './social';
+export { default as Side } from './side';
 export { default as Layout } from './layout';
