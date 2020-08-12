@@ -1,8 +1,9 @@
 import React from "react"
 import { email } from "@config"
 import styled from "styled-components"
-import { mixins, Section } from "@styles"
+import { mixins, Section, theme } from "@styles"
 import PropTypes from "prop-types"
+const { colors, fontSizes, fonts } = theme;
 
 const StyledContainer = styled(Section)`
   ${mixins.flexCenter};
@@ -14,17 +15,23 @@ const StyledContainer = styled(Section)`
 const StyledOverline = styled.h1`
   margin: 0 0 20px 3px;
   font-weight: normal;
+  font-family: ${fonts.SFMono};
+
 `
 
 const StyledTitle = styled.h2`
   font-size: 80px;
   line-height: 1.1;
   margin: 0;
+  font-family: ${fonts.SFMono};
+
 `
 
 const StyledSubtitle = styled.h3`
   font-size: 80px;
   line-height: 1.1;
+  font-family: ${fonts.SFMono};
+
 `
 
 const StyledDescription = styled.div`
@@ -39,6 +46,8 @@ const StyledDescription = styled.div`
 const StyledEmailLink = styled.a`
   ${mixins.bigButton};
   margin-top: 50px;
+  font-family: ${fonts.SFMono};
+
 `
 
 const Hero = ({ data }) => {
