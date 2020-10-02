@@ -37,13 +37,14 @@ const mixins = {
   `,
 
   inlineLink: css`
+  color: ${colors.navy};
     display: inline-block;
     text-decoration: none;
     text-decoration-skip-ink: auto;
     position: relative;
     transition: ${theme.transition};
     cursor: pointer;
-    color: ${colors.green};
+    color: ${colors.black};
     &:hover,
     &:focus,
     &:active {
@@ -71,12 +72,11 @@ const mixins = {
   `,
 
   smallButton: css`
-    color: ${colors.green};
-    background-color: transparent;
-    border: 1px solid ${colors.green};
+  background-color: ${colors.lightSlate};
+    border: 1px solid ${colors.black};
     border-radius: ${theme.borderRadius};
     padding: 0.75rem 1rem;
-    font-size: ${fontSizes.smish};
+    font-size: ${fontSizes.sm};
     font-family: ${fonts.SFMono};
     line-height: 1;
     text-decoration: none;
@@ -85,7 +85,7 @@ const mixins = {
     &:hover,
     &:focus,
     &:active {
-      background-color: ${colors.transGreen};
+      background-color: ${colors.navy};
     }
     &:after {
       display: none !important;
@@ -93,9 +93,8 @@ const mixins = {
   `,
 
   bigButton: css`
-    color: ${colors.green};
-    background-color: transparent;
-    border: 1px solid ${colors.green};
+    background-color: ${colors.lightestSlate};
+    border: 1px solid ${colors.black};
     border-radius: ${theme.borderRadius};
     padding: 1.25rem 1.75rem;
     font-size: ${fontSizes.sm};
@@ -107,7 +106,8 @@ const mixins = {
     &:hover,
     &:focus,
     &:active {
-      background-color: ${colors.transGreen};
+      background-color: ${colors.navy};
+      // color: ${colors.transGreen};
     }
     &:after {
       display: none !important;
@@ -128,6 +128,7 @@ const mixins = {
   `,
 
   fancyList: css`
+  color: ${colors.navy};
     padding: 0;
     margin: 0;
     list-style: none;
@@ -140,7 +141,7 @@ const mixins = {
         content: '▹';
         position: absolute;
         left: 0;
-        color: ${colors.green};
+        color: ${colors.navy};
       }
     }
   `,

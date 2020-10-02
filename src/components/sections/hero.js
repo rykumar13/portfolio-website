@@ -17,7 +17,7 @@ const StyledOverline = styled.h1`
   font-weight: normal;
   font-family: ${fonts.SFMono};
   font-size: ${fontSizes.md};
-  color: ${colors.green};
+  //color: ${colors.green};
 
 `
 

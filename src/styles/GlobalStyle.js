@@ -24,8 +24,7 @@ const GlobalStyle = createGlobalStyle`
     overflow-x: hidden;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
-    background-color: ${colors.navy};
-    color: ${colors.slate};
+    background-color: ${colors.white};
     line-height: 1.3;
   }
 
@@ -43,7 +42,6 @@ const GlobalStyle = createGlobalStyle`
   h5,
   h6 {
     font-weight: 600;
-    color: ${colors.lightestSlate};
     margin: 0 0 10px 0;
   }
 
@@ -169,7 +167,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   hr {
-    background-color: ${colors.lightestNavy};
+    --background-color: ${colors.lightestNavy};
     height: 1px;
     border-width: 0px;
     border-style: initial;
@@ -179,7 +177,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   #logo {
-    color: ${colors.green};
+    color: ${colors.black};
   }
 
   .overline {

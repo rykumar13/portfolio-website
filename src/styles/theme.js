@@ -13,6 +13,8 @@ const theme = {
     lightestSlate: '#ccd6f6',
     white: '#e6f1ff',
     green: ACCENT,
+    black: '#000000',
+    backgroun_grey: '#EAECEE',
   },
 
   fonts: {
