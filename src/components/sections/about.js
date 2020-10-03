@@ -12,14 +12,14 @@ const StyledContainer = styled(Section)`
 
 const StyledFlexContainer = styled.div`
   ${mixins.flexBetween};
-  margin-top: 50px;
+  margin-top: 0px;
   align-items: flex-start;
 `;
 
 const StyledContent = styled.div`
   font-family: ${fonts.Calibre};
   width: 60%;
-  max-width: 480px;
+  max-width: 500px;
   a {
     ${mixins.inlineLink};
   }
@@ -38,14 +38,14 @@ const Skill = styled.li`
   position: relative;
   margin-bottom: 10px;
   padding-left: 20px;
-  font-family: ${fonts.SFMono};
-  font-size: ${fontSizes.smish};
-  color: ${colors.slate};
+  font-family: ${fonts.Calibre};
+  font-size: ${fontSizes.sm};
+  color: ${colors.black};
   &:before {
     content: '▹';
     position: absolute;
     left: 0;
-    color: ${colors.green};
+    color: ${colors.black};
     font-size: ${fontSizes.sm};
     line-height: 12px;
   }
@@ -76,7 +76,7 @@ const StyledAvatarLink = styled.a`
   width: 100%;
   position: relative;
   border-radius: ${theme.borderRadius};
-  background-color: ${colors.green};
+  background-color: ${colors.lightestSlate};
   margin-left: -20px;
   &:hover,
   &:focus {
@@ -105,11 +105,11 @@ const StyledAvatarLink = styled.a`
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: ${colors.navy};
+    background-color: ${colors.black};
     mix-blend-mode: screen;
   }
   &:after {
-    border: 2px solid ${colors.green};
+    border: 1px solid ${colors.black};
     top: 20px;
     left: 20px;
     z-index: -1;

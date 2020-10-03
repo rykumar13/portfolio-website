@@ -12,8 +12,10 @@ skills:
 
 Hello! I'm Rajiv, a software engineer based in London, UK.
 
-I enjoy creating things that live on the internet, whether that be websites, applications, or anything in between. My goal is to always build products that provide pixel-perfect, performant experiences.
+I enjoy using new technologies to build websites & applications that deliver value to my clients. 
 
-Shortly after graduating from [University of Auckland](https://www.auckland.ac.nz/en.html), I joined the engineering team at [Gentrack](https://www.gentrack.com/) where I work on a wide variety of interesting and meaningful projects on a daily basis.
+Shortly after graduating from [University of Auckland](https://www.auckland.ac.nz/en.html), I joined the team at [Gentrack](https://www.gentrack.com/) where I currently work.
+
+My goal is to always build products that are of high quality & provide a great user experience.
 
 Here are a few technologies I've been working with recently:

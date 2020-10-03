@@ -7,7 +7,7 @@ const Main = styled.main`
   width: 100%;
   max-width: 1600px;
   min-height: 100vh;
-  padding-top: 20px;
+  padding-top: 0px;
   padding-bottom: 20px;
 `;
 

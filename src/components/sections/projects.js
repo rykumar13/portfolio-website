@@ -115,8 +115,14 @@ const StyledTechList = styled.ul`
   }
 `;
 
-const StyledMoreButton = styled(Button)`
-  margin: 100px auto 0;
+const ProjectsHeading = styled.h3`
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0 30px;
+  width: 100%;
+  white-space: nowrap;
 `;
 
 const Projects = ({ data }) => {
@@ -135,7 +141,7 @@ const Projects = ({ data }) => {
 
   return (
     <StyledContainer>
-      <Heading ref={revealTitle}>Project Portfolio</Heading>
+      <ProjectsHeading ref={revealTitle}>Project Portfolio</ProjectsHeading>
 
       <StyledGrid>
         <TransitionGroup className="projects">

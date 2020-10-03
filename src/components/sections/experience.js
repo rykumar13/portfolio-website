@@ -37,12 +37,12 @@ const StyledTabButton = styled.button`
   height: ${theme.tabHeight}px;
   padding: 0 20px 2px;
   transition: ${theme.transition};
-  border-left: 2px solid ${colors.lightestNavy};
+  border-left: 1px solid ${colors.black};
   text-align: left;
   white-space: nowrap;
   font-family: ${fonts.SFMono};
   font-size: ${fontSizes.smish};
-  color: ${props => (props.isActive ? colors.green : colors.slate)};
+  color: ${props => (props.isActive ? colors.green : colors.black)};
   &:hover,
   &:focus {
     background-color: ${colors.lightNavy};
@@ -50,7 +50,7 @@ const StyledTabButton = styled.button`
 `;
 const StyledHighlight = styled.span`
   display: block;
-  background: ${colors.green};
+  //background: ${colors.green};
   width: 2px;
   height: ${theme.tabHeight}px;
   border-radius: ${theme.borderRadius};
@@ -81,14 +81,14 @@ const StyledTabContent = styled.div`
 `;
 
 const StyledJobTitle = styled.h4`
-  color: ${colors.lightestSlate};
+  color: ${colors.black};
   font-size: ${fontSizes.xxl};
   font-weight: 500;
   margin-bottom: 5px;
 `;
 
 const StyledCompany = styled.span`
-  color: ${colors.green};
+  color: ${colors.black};
 `;
 const StyledJobDetails = styled.h5`
   font-family: ${fonts.Calibre};

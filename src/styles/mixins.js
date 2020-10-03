@@ -42,38 +42,30 @@ const mixins = {
   `,
 
   inlineLink: css`
-  color: ${colors.navy};
-    display: inline-block;
-    text-decoration: none;
-    text-decoration-skip-ink: auto;
-    position: relative;
-    transition: ${theme.transition};
-    cursor: pointer;
-    color: ${colors.black};
-    &:hover,
-    &:focus,
-    &:active {
-      color: ${colors.green};
-      outline: 0;
-      &:after {
-        width: 100%;
-      }
-      & > * {
-        color: ${colors.green} !important;
-        transition: ${theme.transition};
-      }
-    }
+  display: inline-block;
+  text-decoration: underline;
+  text-decoration-skip-ink: auto;
+  position: relative;
+  transition: ${theme.transition};
+  cursor: pointer;
+  &:hover,
+  &:focus,
+  &:active {
+    color: ${colors.green};
+    outline: 0;
     &:after {
-      content: '';
-      display: block;
-      width: 0;
-      height: 1px;
-      position: relative;
-      bottom: 0.37em;
-      background-color: ${colors.green};
-      transition: ${theme.transition};
-      opacity: 0.5;
+      width: 100%;
     }
+    & > * {
+      color: ${colors.green} !important;
+      transition: ${theme.transition};
+    }
+  }
+  &:after {
+    background-color: ${colors.lightSlate};
+    transition: ${theme.transition};
+    opacity: 0.5;
+  }
   `,
 
   smallButton: css`
