@@ -138,6 +138,7 @@ const mixins = {
     margin: 0;
     list-style: none;
     font-size: ${fontSizes.lg};
+    font-family: ${fonts.Calibre};
     li {
       position: relative;
       padding-left: 30px;

@@ -37,6 +37,7 @@ const StyledSubtitle = styled.h3`
 `
 
 const StyledDescription = styled.div`
+  font-family: ${fonts.Calibre};
   margin-top: 25px;
   width: 50%;
   max-width: 500px;
@@ -48,7 +49,6 @@ const StyledDescription = styled.div`
 const StyledEmailLink = styled.a`
   ${mixins.bigButton};
   margin-top: 50px;
-  font-family: ${fonts.SFMono};
 
 `
 

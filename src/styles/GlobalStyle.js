@@ -24,7 +24,7 @@ const GlobalStyle = createGlobalStyle`
     overflow-x: hidden;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
-    background-color: ${colors.white};
+    //background-color: ${colors.white};
     line-height: 1.3;
   }
 
@@ -41,7 +41,7 @@ const GlobalStyle = createGlobalStyle`
   h4,
   h5,
   h6 {
-    font-weight: 600;
+    font-weight: 700;
     margin: 0 0 10px 0;
   }
 

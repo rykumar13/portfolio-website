@@ -30,19 +30,19 @@ socialMedia: [
 ],
 navLinks: [
   {
-    name: '1.About',
+    name: 'About',
     url: '/#about',
   },
   {
-    name: '2.Experience',
+    name: 'Experience',
     url: '/#jobs',
   },
   {
-    name: '3.Work',
+    name: 'Work',
     url: '/#projects',
   },
   {
-    name: '4.Contact',
+    name: 'Contact',
     url: '/#contact',
   },
 ],

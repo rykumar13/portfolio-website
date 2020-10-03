@@ -17,7 +17,6 @@ const StyledContainer = styled(Section)`
 
 const StyledHeading = styled(Heading)`
   display: block;
-  color: ${colors.green};
   font-size: ${fontSizes.md};
   font-family: ${fonts.SFMono};
   font-weight: normal;
@@ -35,11 +34,16 @@ const StyledHeading = styled(Heading)`
 const StyledTitle = styled.h4`
   margin: 0 0 20px;
   font-size: 60px;
+  font-family: ${fonts.SFMono};
 `;
 
 const StyledEmailLink = styled.a`
   ${mixins.bigButton};
   margin-top: 50px;
+`;
+
+const StyledDiv = styled.div`
+font-family: ${fonts.Calibre};
 `;
 
 const Contact = ({ data }) => {
@@ -54,7 +58,7 @@ const Contact = ({ data }) => {
 
       <StyledTitle>{title}</StyledTitle>
 
-      <div dangerouslySetInnerHTML={{ __html: html }} />
+      <StyledDiv dangerouslySetInnerHTML={{ __html: html }} />
 
       <StyledEmailLink href={`mailto:${email}`} target="_blank" rel="nofollow noopener noreferrer">
         {buttonText}

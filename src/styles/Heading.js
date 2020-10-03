@@ -11,8 +11,6 @@ const Heading = styled.h3`
   white-space: nowrap;
 
   &:before {
-    counter-increment: section;
-    content: '0' counter(section) '.';
     margin-right: 10px;
     font-weight: normal;
     color: ${colors.green};
@@ -25,9 +23,9 @@ const Heading = styled.h3`
     display: block;
     height: 1px;
     width: 300px;
-    background-color: ${colors.white};
+    background-color: ${colors.black};
     position: relative;
-    top: -5px;
+    //top: -5px;
     margin-left: 20px;
   }
 `;

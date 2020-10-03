@@ -21,7 +21,7 @@ const NavListItem = styled.li`
 `
 
 const MenuLink = styled.a`
-  font-family: ${fonts.SFMono};
+  font-family: ${fonts.Calibre};
   font-size: ${fontSizes.lg};
   // color: ${colors.lightestSlate};
 `

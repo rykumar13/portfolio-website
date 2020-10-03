@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import sr from '@utils/sr';
 import { srConfig } from '@config';
 import styled from 'styled-components';
-import { theme, mixins, Section, Header } from '@styles';
+import { theme, mixins, Section, Header, Heading } from '@styles';
 const { colors, fontSizes, fonts } = theme;
 
 const StyledContainer = styled(Section)`
@@ -13,6 +13,7 @@ const StyledContainer = styled(Section)`
 
 const StyledTabs = styled.div`
   display: flex;
+  margin-top: 50px;
   align-items: flex-start;
   position: relative;
 `;
@@ -90,7 +91,7 @@ const StyledCompany = styled.span`
   color: ${colors.green};
 `;
 const StyledJobDetails = styled.h5`
-  font-family: ${fonts.SFMono};
+  font-family: ${fonts.Calibre};
   font-size: ${fontSizes.smish};
   font-weight: normal;
   letter-spacing: 0.05em;
@@ -104,6 +105,7 @@ const StyledJobDetails = styled.h5`
 const StyledTitle = styled.h4`
   margin: 0 auto;
   font-size: ${fontSizes.h3};
+  font-family: ${fonts.SFMono};
   a {
     display: block;
   }
@@ -150,7 +152,7 @@ const Experience = ({ data }) => {
 
   return (
     <StyledContainer id="jobs" ref={revealContainer}>
-      <StyledTitle>Where I&apos;ve Worked</StyledTitle>
+      <Heading>Where I&apos;ve Worked</Heading>
       <StyledTabs>
         <StyledTabList role="tablist" aria-label="Job tabs" onKeyDown={e => onKeyPressed(e)}>
           {data &&

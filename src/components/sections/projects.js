@@ -5,26 +5,17 @@ import sr from '@utils/sr';
 import { srConfig } from '@config';
 import { FormattedIcon } from '@components/icons';
 import styled from 'styled-components';
-import { theme, mixins, media, Section, Button } from '@styles';
+import { theme, mixins, media, Section, Button, Heading  } from '@styles';
 const { colors, fontSizes, fonts } = theme;
 
 const StyledContainer = styled(Section)`
-  ${mixins.flexCenter};
   flex-direction: column;
   align-items: flex-start;
 `;
 
-const StyledTitle = styled.h4`
-  margin: 0 auto;
-  font-size: ${fontSizes.h3};
-  a {
-    display: block;
-  }
-`;
 
-const StyledGrid = styled.div`
-  margin-top: 50px;
-
+const StyledGrid = styled.div`  
+margin-top: 50px;
   .projects {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -43,7 +34,12 @@ const StyledProjectInner = styled.div`
   height: 100%;
   border-radius: ${theme.borderRadius};
   transition: ${theme.transition};
-  background-color: ${colors.lightNavy};
+  background-color: ${colors.lightSlate};
+  &:hover,
+  &:focus {
+    background-color: ${colors.navy};
+    color: ${colors.green};
+  }
 `;
 
 const StyledProject = styled.div`
@@ -73,7 +69,7 @@ const StyledFolder = styled.div`
 
 const StyledProjectLinks = styled.div`
   margin-right: -10px;
-  color: ${colors.lightSlate};
+  //color: ${colors.lightSlate};
 `;
 
 const StyledIconLink = styled.a`
@@ -89,12 +85,12 @@ const StyledIconLink = styled.a`
 const StyledProjectName = styled.h5`
   margin: 0 0 10px;
   font-size: ${fontSizes.xxl};
-  color: ${colors.lightestSlate};
+  //color: ${colors.lightestSlate};
 `;
 
 const StyledProjectDescription = styled.div`
   font-size: 17px;
-  color: ${colors.lightSlate};
+  //color: ${colors.lightSlate};
   a {
     ${mixins.inlineLink};
   }
@@ -110,7 +106,7 @@ const StyledTechList = styled.ul`
   list-style: none;
 
   li {
-    color: ${colors.slate};
+    //color: ${colors.slate};
     line-height: 1.75;
     margin-right: 15px;
     &:last-of-type {
@@ -139,7 +135,7 @@ const Projects = ({ data }) => {
 
   return (
     <StyledContainer>
-      <StyledTitle ref={revealTitle}>Personal Projects</StyledTitle>
+      <Heading ref={revealTitle}>Project Portfolio</Heading>
 
       <StyledGrid>
         <TransitionGroup className="projects">

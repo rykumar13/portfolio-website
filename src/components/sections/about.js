@@ -12,10 +12,12 @@ const StyledContainer = styled(Section)`
 
 const StyledFlexContainer = styled.div`
   ${mixins.flexBetween};
+  margin-top: 50px;
   align-items: flex-start;
 `;
 
 const StyledContent = styled.div`
+  font-family: ${fonts.Calibre};
   width: 60%;
   max-width: 480px;
   a {
@@ -114,13 +116,6 @@ const StyledAvatarLink = styled.a`
   }
 `;
 
-const StyledTitle = styled.h4`
-  margin: 0 auto;
-  font-size: ${fontSizes.h3};
-  a {
-    display: block;
-  }
-`;
 
 const About = ({ data }) => {
   const { frontmatter, html } = data[0].node;
@@ -128,7 +123,7 @@ const About = ({ data }) => {
 
   return (
     <StyledContainer id="about">
-      <StyledTitle>{title}</StyledTitle>
+      <Heading>{title}</Heading>
       <StyledFlexContainer>
         <StyledContent>
           <div dangerouslySetInnerHTML={{ __html: html }} />
