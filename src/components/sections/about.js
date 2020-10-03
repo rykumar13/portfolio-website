@@ -114,13 +114,21 @@ const StyledAvatarLink = styled.a`
   }
 `;
 
+const StyledTitle = styled.h4`
+  margin: 0 auto;
+  font-size: ${fontSizes.h3};
+  a {
+    display: block;
+  }
+`;
+
 const About = ({ data }) => {
   const { frontmatter, html } = data[0].node;
   const { title, skills, avatar } = frontmatter;
 
   return (
     <StyledContainer id="about">
-      <Header>{title}</Header>
+      <StyledTitle>{title}</StyledTitle>
       <StyledFlexContainer>
         <StyledContent>
           <div dangerouslySetInnerHTML={{ __html: html }} />

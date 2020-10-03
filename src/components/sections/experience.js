@@ -101,6 +101,14 @@ const StyledJobDetails = styled.h5`
   }
 `;
 
+const StyledTitle = styled.h4`
+  margin: 0 auto;
+  font-size: ${fontSizes.h3};
+  a {
+    display: block;
+  }
+`;
+
 const Experience = ({ data }) => {
   const [activeTabId, setActiveTabId] = useState(0);
   const [tabFocus, setTabFocus] = useState(null);
@@ -142,7 +150,7 @@ const Experience = ({ data }) => {
 
   return (
     <StyledContainer id="jobs" ref={revealContainer}>
-      <Header>Where I&apos;ve Worked</Header>
+      <StyledTitle>Where I&apos;ve Worked</StyledTitle>
       <StyledTabs>
         <StyledTabList role="tablist" aria-label="Job tabs" onKeyDown={e => onKeyPressed(e)}>
           {data &&
