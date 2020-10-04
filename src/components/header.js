@@ -3,6 +3,7 @@ import { IconLogo } from '@components/icons';
 import styled from "styled-components"
 import { navLinks } from "@config"
 import { theme, mixins } from "@styles"
+import { Link } from 'react-scroll';
 const { colors, fontSizes, fonts } = theme
 
 const StyledContainer = styled.div`
@@ -64,7 +65,12 @@ const Header = () => {
       <NavList>
         {navLinks.map(({ url, name }) => (
           <NavListItem>
-            <MenuLink href={url}>{name}</MenuLink>
+            <MenuLink>
+            <Link
+            activeClass="active" to={url} spy={true} smooth={true} duration={700}>
+          {name}
+            </Link>
+            </MenuLink>
           </NavListItem>
         ))}
       </NavList>
