@@ -129,8 +129,6 @@ const Projects = ({ data }) => {
   const revealTitle = useRef(null);
   const revealProjects = useRef([]);
 
-  useEffect(() => {
-  }, []);
 
   const GRID_LIMIT = 6;
   const projects = data.filter(({ node }) => node);
