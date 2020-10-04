@@ -90,7 +90,7 @@ const StyledProjectName = styled.h5`
 
 const StyledProjectDescription = styled.div`
   font-size: 17px;
-  //color: ${colors.lightSlate};
+  font-family: ${fonts.Calibre};
   a {
     ${mixins.inlineLink};
   }
@@ -104,9 +104,9 @@ const StyledTechList = styled.ul`
   padding: 0;
   margin: 20px 0 0 0;
   list-style: none;
+  font-family: ${fonts.Calibre};
 
   li {
-    //color: ${colors.slate};
     line-height: 1.75;
     margin-right: 15px;
     &:last-of-type {
@@ -130,8 +130,6 @@ const Projects = ({ data }) => {
   const revealProjects = useRef([]);
 
   useEffect(() => {
-    // sr.reveal(revealTitle.current, srConfig());
-    // revealProjects.current.forEach((ref, i) => sr.reveal(ref, srConfig(i * 100)));
   }, []);
 
   const GRID_LIMIT = 6;
@@ -140,7 +138,7 @@ const Projects = ({ data }) => {
   const projectsToShow = projects;
 
   return (
-    <StyledContainer>
+    <StyledContainer id='projects'>
       <ProjectsHeading ref={revealTitle}>Project Portfolio</ProjectsHeading>
 
       <StyledGrid>

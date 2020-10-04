@@ -1,5 +1,5 @@
 ---
-date: '2020-08-09'
+date: '2020-10-08'
 title: 'Personal Website V1'
 github: 'https://github.com/rykumar13/portfolio-website'
 external: 'https://github.com/rykumar13/portfolio-website'

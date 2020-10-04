@@ -64,7 +64,7 @@ const Header = () => {
       <NavList>
         {navLinks.map(({ url, name }) => (
           <NavListItem>
-            <MenuLink to={url}>{name}</MenuLink>
+            <MenuLink href={url}>{name}</MenuLink>
           </NavListItem>
         ))}
       </NavList>

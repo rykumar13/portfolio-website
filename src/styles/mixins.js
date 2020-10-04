@@ -43,7 +43,6 @@ const mixins = {
 
   inlineLink: css`
   display: inline-block;
-  text-decoration: underline;
   text-decoration-skip-ink: auto;
   position: relative;
   transition: ${theme.transition};
