@@ -89,7 +89,7 @@ const mixins = {
   `,
 
   bigButton: css`
-    background-color: ${colors.lightestSlate};
+    background-color: ${colors.lightSlate};
     border: 1px solid ${colors.black};
     border-radius: ${theme.borderRadius};
     padding: 1.25rem 1.75rem;

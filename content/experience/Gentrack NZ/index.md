@@ -1,5 +1,5 @@
 ---
-date: '2017-12-21'
+date: '2019-03-31'
 title: 'Analyst Programmer'
 company: 'Gentrack NZ Ltd'
 location: 'Auckland, NZ'

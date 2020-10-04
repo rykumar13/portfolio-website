@@ -1,22 +1,28 @@
 import React from "react"
-import { IconLogo } from '@components/icons';
+import { IconLogo } from "@components/icons"
 import styled from "styled-components"
 import { navLinks } from "@config"
 import { theme, mixins } from "@styles"
-import { Link } from 'react-scroll';
+import { Link } from "react-scroll"
+import Headroom from "react-headroom"
 const { colors, fontSizes, fonts } = theme
 
 const StyledContainer = styled.div`
   ${mixins.flexBetween};
+  background-color: ${colors.white};
+  height: 80px;
+  box-shadow: 0px 1px; 
 `
 
 const NavList = styled.ol`
   ${mixins.flexBetween};
   list-style-type: none;
+  margin-top: 15px;
+  
 `
 
 const NavListItem = styled.li`
-  margin: 25px 0px 35px 35px;
+  margin: 35px 0px 35px 35px;
   position: relative;
   font-size: ${fontSizes.smish};
 `
@@ -30,11 +36,11 @@ const MenuLink = styled.a`
 const StyledResumeButton = styled.a`
   ${mixins.smallButton};
   font-size: ${fontSizes.smish};
-  margin: 25px 50px 50px 50px;
+  margin: 45px 50px 50px 50px;
 `
 
 const StyledLogo = styled.div`
-  margin: 25px 50px 50px 50px;
+  margin: 45px 50px 50px 50px;
   a {
     display: block;
     // color: ${colors.green};
@@ -52,36 +58,43 @@ const StyledLogo = styled.div`
       user-select: none;
     }
   }
-`;
+`
 
 const Header = () => {
   return (
-    <StyledContainer>
-      <StyledLogo tabindex="-1">
+    <Headroom>
+      <StyledContainer>
+        <StyledLogo tabindex="-1">
           <a href="/" aria-label="home">
             <IconLogo />
           </a>
-      </StyledLogo>
-      <NavList>
-        {navLinks.map(({ url, name }) => (
-          <NavListItem>
-            <MenuLink>
-            <Link
-            activeClass="active" to={url} spy={true} smooth={true} duration={700}>
-          {name}
-            </Link>
-            </MenuLink>
-          </NavListItem>
-        ))}
-      </NavList>
-      <StyledResumeButton
-        href="/resume.pdf"
-        target="_blank"
-        rel="nofollow noopener noreferrer"
-      >
-        Resume
-      </StyledResumeButton>
-    </StyledContainer>
+        </StyledLogo>
+        <NavList>
+          {navLinks.map(({ url, name }) => (
+            <NavListItem>
+              <MenuLink>
+                <Link
+                  activeClass="active"
+                  to={url}
+                  spy={true}
+                  smooth={true}
+                  duration={700}
+                >
+                  {name}
+                </Link>
+              </MenuLink>
+            </NavListItem>
+          ))}
+        </NavList>
+        <StyledResumeButton
+          href="/resume.pdf"
+          target="_blank"
+          rel="nofollow noopener noreferrer"
+        >
+          Resume
+        </StyledResumeButton>
+      </StyledContainer>
+    </Headroom>
   )
 }
 

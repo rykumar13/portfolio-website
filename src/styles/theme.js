@@ -11,7 +11,7 @@ const theme = {
     slate: '#8892b0',
     lightSlate: '#a8b2d1',
     lightestSlate: '#ccd6f6',
-    white: '#e6f1ff',
+    white: '#FFFFFF',
     green: ACCENT,
     black: '#000000',
     backgroun_grey: '#EAECEE',

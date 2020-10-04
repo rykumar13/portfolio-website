@@ -34,7 +34,7 @@ const StyledProjectInner = styled.div`
   height: 100%;
   border-radius: ${theme.borderRadius};
   transition: ${theme.transition};
-  background-color: ${colors.lightSlate};
+  background-color: ${colors.lightestSlate};
   &:hover,
   &:focus {
     background-color: ${colors.navy};
@@ -85,7 +85,6 @@ const StyledIconLink = styled.a`
 const StyledProjectName = styled.h5`
   margin: 0 0 10px;
   font-size: ${fontSizes.xxl};
-  //color: ${colors.lightestSlate};
 `;
 
 const StyledProjectDescription = styled.div`
@@ -128,7 +127,6 @@ const ProjectsHeading = styled.h3`
 const Projects = ({ data }) => {
   const revealTitle = useRef(null);
   const revealProjects = useRef([]);
-
 
   const GRID_LIMIT = 6;
   const projects = data.filter(({ node }) => node);
