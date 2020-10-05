@@ -11,14 +11,12 @@ const StyledContainer = styled.div`
   ${mixins.flexBetween};
   background-color: ${colors.white};
   height: 80px;
-  //box-shadow: 0px 1px; 
 `
 
 const NavList = styled.ol`
   ${mixins.flexBetween};
   list-style-type: none;
   margin-top: 15px;
-  
 `
 
 const NavListItem = styled.li`
@@ -30,7 +28,6 @@ const NavListItem = styled.li`
 const MenuLink = styled.a`
   font-family: ${fonts.Calibre};
   font-size: ${fontSizes.lg};
-  // color: ${colors.lightestSlate};
 `
 
 const StyledResumeButton = styled.a`
@@ -43,7 +40,6 @@ const StyledLogo = styled.div`
   margin: 45px 50px 50px 50px;
   a {
     display: block;
-    // color: ${colors.green};
     width: 52px;
     height: 52px;
     &:hover,

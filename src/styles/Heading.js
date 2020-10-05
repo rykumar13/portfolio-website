@@ -9,7 +9,6 @@ const Heading = styled.h3`
   margin: 10px 0 30px;
   width: 100%;
   white-space: nowrap;
-
 `;
 
 export default Heading;
