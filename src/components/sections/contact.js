@@ -1,10 +1,9 @@
-import React, { useEffect, useRef } from 'react';
-import PropTypes from 'prop-types';
-import sr from '@utils/sr';
-import { srConfig, email } from '@config';
-import styled from 'styled-components';
-import { theme, mixins, media, Section, Heading } from '@styles';
-const { colors, fontSizes, fonts } = theme;
+import React from "react"
+import PropTypes from "prop-types"
+import { email } from "@config"
+import styled from "styled-components"
+import { theme, mixins, Section, Heading } from "@styles"
+const { fontSizes, fonts } = theme
 
 const StyledContainer = styled(Section)`
   text-align: center;
@@ -13,7 +12,7 @@ const StyledContainer = styled(Section)`
   a {
     ${mixins.inlineLink};
   }
-`;
+`
 
 const StyledHeading = styled(Heading)`
   display: block;
@@ -29,46 +28,45 @@ const StyledHeading = styled(Heading)`
   &:after {
     display: none;
   }
-`;
+`
 
 const StyledTitle = styled.h4`
-  margin: 0 0 20px;
+  margin: 0px 0px 20px;
   font-size: 60px;
   font-family: ${fonts.SFMono};
-`;
+`
 
 const StyledEmailLink = styled.a`
   ${mixins.bigButton};
   margin-top: 50px;
-`;
+`
 
 const StyledDiv = styled.div`
-font-family: ${fonts.Calibre};
-`;
+  font-family: ${fonts.Calibre};
+`
 
 const Contact = ({ data }) => {
-  const { frontmatter, html } = data[0].node;
-  const { title, buttonText } = frontmatter;
-//    const revealContainer = useRef(null);
-//    useEffect(() => sr.reveal(revealContainer.current, srConfig()), []);
+  const { frontmatter, html } = data[0].node
+  const { title, buttonText } = frontmatter
 
   return (
-    <StyledContainer id="contact" >
+    <StyledContainer id="contact">
       <StyledHeading>What&apos;s Next?</StyledHeading>
-
       <StyledTitle>{title}</StyledTitle>
-
       <StyledDiv dangerouslySetInnerHTML={{ __html: html }} />
-
-      <StyledEmailLink href={`mailto:${email}`} target="_blank" rel="nofollow noopener noreferrer">
+      <StyledEmailLink
+        href={`mailto:${email}`}
+        target="_blank"
+        rel="nofollow noopener noreferrer"
+      >
         {buttonText}
       </StyledEmailLink>
     </StyledContainer>
-  );
-};
+  )
+}
 
 Contact.propTypes = {
   data: PropTypes.array.isRequired,
-};
+}
 
-export default Contact;
+export default Contact

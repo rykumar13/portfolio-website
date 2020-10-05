@@ -1,20 +1,20 @@
 import React from "react"
 import styled from "styled-components"
-import Img from 'gatsby-image';
+import Img from "gatsby-image"
 import PropTypes from "prop-types"
-import { github } from '@config';
+import { github } from "@config"
 import { theme, mixins, Section, Heading } from "@styles"
-const { colors, fontSizes, fonts } = theme;
+const { colors, fontSizes, fonts } = theme
 
 const StyledContainer = styled(Section)`
   position: relative;
-`;
+`
 
 const StyledFlexContainer = styled.div`
   ${mixins.flexBetween};
   margin-top: 0px;
   align-items: flex-start;
-`;
+`
 
 const StyledContent = styled.div`
   font-family: ${fonts.Calibre};
@@ -23,7 +23,7 @@ const StyledContent = styled.div`
   a {
     ${mixins.inlineLink};
   }
-`;
+`
 
 const SkillsContainer = styled.ul`
   display: grid;
@@ -32,7 +32,7 @@ const SkillsContainer = styled.ul`
   padding: 0;
   margin: 20px 0 0 0;
   list-style: none;
-`;
+`
 
 const Skill = styled.li`
   position: relative;
@@ -42,14 +42,14 @@ const Skill = styled.li`
   font-size: ${fontSizes.sm};
   color: ${colors.black};
   &:before {
-    content: '▹';
+    content: "▹";
     position: absolute;
     left: 0;
     color: ${colors.black};
     font-size: ${fontSizes.sm};
     line-height: 12px;
   }
-`;
+`
 
 const StyledPic = styled.div`
   position: relative;
@@ -61,7 +61,7 @@ const StyledPic = styled.div`
       outline: 0;
     }
   }
-`;
+`
 
 const StyledAvatar = styled(Img)`
   position: relative;
@@ -69,7 +69,7 @@ const StyledAvatar = styled(Img)`
   filter: grayscale(100%) contrast(1);
   border-radius: ${theme.borderRadius};
   transition: ${theme.transition};
-`;
+`
 
 const StyledAvatarLink = styled.a`
   ${mixins.boxShadow};
@@ -90,36 +90,35 @@ const StyledAvatarLink = styled.a`
       mix-blend-mode: normal;
     }
   }
-  // &:before,
-  // &:after {
-  //   content: '';
-  //   display: block;
-  //   position: absolute;
-  //   width: 100%;
-  //   height: 100%;
-  //   border-radius: ${theme.borderRadius};
-  //   transition: ${theme.transition};
-  // }
-  // &:before {
-  //   top: 0;
-  //   left: 0;
-  //   right: 0;
-  //   bottom: 0;
-  //   background-color: ${colors.black};
-  //   mix-blend-mode: screen;
-  // }
-  // &:after {
-  //   border: 1px solid ${colors.black};
-  //   top: 20px;
-  //   left: 20px;
-  //   z-index: -1;
-  // }
-`;
-
+  &:before,
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: ${theme.borderRadius};
+    transition: ${theme.transition};
+  }
+  &:before {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: ${colors.black};
+    mix-blend-mode: screen;
+  }
+  &:after {
+    border: 1px solid ${colors.black};
+    top: 10px;
+    left: 10px;
+    z-index: -1;
+  }
+`
 
 const About = ({ data }) => {
-  const { frontmatter, html } = data[0].node;
-  const { title, skills, avatar } = frontmatter;
+  const { frontmatter, html } = data[0].node
+  const { title, skills, avatar } = frontmatter
 
   return (
     <StyledContainer id="about">
@@ -138,11 +137,11 @@ const About = ({ data }) => {
         </StyledPic>
       </StyledFlexContainer>
     </StyledContainer>
-  );
-};
+  )
+}
 
 About.propTypes = {
   data: PropTypes.array.isRequired,
 }
 
-export default About;
+export default About
