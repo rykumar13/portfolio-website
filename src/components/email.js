@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { email } from '@config';
 import { Side } from '@components';
 import styled from 'styled-components';
@@ -42,8 +41,5 @@ const Email = () => (
     </StyledLinkWrapper>
   </Side>
 );
-Email.propTypes = {
-  //isHome: PropTypes.bool,
-};
 
 export default Email;
