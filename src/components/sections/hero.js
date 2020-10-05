@@ -3,7 +3,7 @@ import { email } from "@config"
 import styled from "styled-components"
 import { mixins, Section, theme } from "@styles"
 import PropTypes from "prop-types"
-const { colors, fontSizes, fonts } = theme;
+const { fontSizes, fonts } = theme
 
 const StyledContainer = styled(Section)`
   ${mixins.flexCenter};
@@ -13,26 +13,24 @@ const StyledContainer = styled(Section)`
 `
 
 const StyledOverline = styled.h1`
-  margin: 0 0 20px 3px;
-  font-weight: normal;
   font-family: ${fonts.SFMono};
   font-size: ${fontSizes.md};
-
+  font-weight: normal;
+  margin: 0 0 20px 3px;
 `
 
 const StyledTitle = styled.h2`
+  font-family: ${fonts.SFMono};
   font-size: 80px;
   line-height: 1.1;
   margin: 0;
-  font-family: ${fonts.SFMono};
 `
 
 const StyledSubtitle = styled.h3`
-  font-size: 70px;
-  line-height: 1.1;
   font-family: ${fonts.SFMono};
+  font-size: 70px;
   font-weight: normal;
-
+  line-height: 1.1;
 `
 
 const StyledDescription = styled.div`
@@ -48,7 +46,6 @@ const StyledDescription = styled.div`
 const StyledEmailLink = styled.a`
   ${mixins.bigButton};
   margin-top: 50px;
-
 `
 
 const Hero = ({ data }) => {
@@ -66,8 +63,6 @@ const Hero = ({ data }) => {
       <StyledEmailLink href={`mailto:${email}`}>Get In Touch</StyledEmailLink>
     </div>
   )
-
-  const items = [one, two, three, four, five]
 
   return (
     <StyledContainer>
