@@ -1,9 +1,9 @@
 import React from "react"
 import styled from "styled-components"
 import Img from 'gatsby-image';
-import { theme, mixins, Section, Heading, Header } from "@styles"
 import PropTypes from "prop-types"
-import { srConfig, github } from '@config';
+import { github } from '@config';
+import { theme, mixins, Section, Heading } from "@styles"
 const { colors, fontSizes, fonts } = theme;
 
 const StyledContainer = styled(Section)`
@@ -90,30 +90,30 @@ const StyledAvatarLink = styled.a`
       mix-blend-mode: normal;
     }
   }
-  &:before,
-  &:after {
-    content: '';
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border-radius: ${theme.borderRadius};
-    transition: ${theme.transition};
-  }
-  &:before {
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: ${colors.black};
-    mix-blend-mode: screen;
-  }
-  &:after {
-    border: 1px solid ${colors.black};
-    top: 20px;
-    left: 20px;
-    z-index: -1;
-  }
+  // &:before,
+  // &:after {
+  //   content: '';
+  //   display: block;
+  //   position: absolute;
+  //   width: 100%;
+  //   height: 100%;
+  //   border-radius: ${theme.borderRadius};
+  //   transition: ${theme.transition};
+  // }
+  // &:before {
+  //   top: 0;
+  //   left: 0;
+  //   right: 0;
+  //   bottom: 0;
+  //   background-color: ${colors.black};
+  //   mix-blend-mode: screen;
+  // }
+  // &:after {
+  //   border: 1px solid ${colors.black};
+  //   top: 20px;
+  //   left: 20px;
+  //   z-index: -1;
+  // }
 `;
 
 

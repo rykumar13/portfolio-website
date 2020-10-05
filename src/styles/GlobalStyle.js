@@ -65,7 +65,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   img[alt=""],
-  img:not([alt]) {
+  img:not([alt]) {a
     filter: blur(5px);
   }
 
@@ -78,7 +78,7 @@ const GlobalStyle = createGlobalStyle`
 
   a {
     display: inline-block;
-    text-decoration: none;
+    text-decoration: underline;
     text-decoration-skip-ink: auto;
     color: inherit;
     position: relative;

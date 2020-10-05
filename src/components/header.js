@@ -11,7 +11,7 @@ const StyledContainer = styled.div`
   ${mixins.flexBetween};
   background-color: ${colors.white};
   height: 80px;
-  box-shadow: 0px 1px; 
+  //box-shadow: 0px 1px; 
 `
 
 const NavList = styled.ol`

@@ -27,7 +27,6 @@ const mixins = {
 
   link: css`
     display: inline-block;
-    text-decoration: none;
     text-decoration-skip-ink: auto;
     color: inherit;
     position: relative;
