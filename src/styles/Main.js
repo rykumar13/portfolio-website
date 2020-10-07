@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import mixins from './mixins';
+import styled from "styled-components"
+import mixins from "./mixins"
 
 const Main = styled.main`
   ${mixins.sidePadding};
@@ -9,6 +9,6 @@ const Main = styled.main`
   min-height: 100vh;
   padding-top: 0px;
   padding-bottom: 20px;
-`;
+`
 
-export default Main;
+export default Main

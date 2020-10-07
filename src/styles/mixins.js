@@ -1,6 +1,6 @@
-import { css } from 'styled-components';
-import theme from './theme';
-const { colors, fontSizes, fonts } = theme;
+import { css } from "styled-components"
+import theme from "./theme"
+const { colors, fontSizes, fonts } = theme
 
 const mixins = {
   flexCenter: css`
@@ -10,9 +10,9 @@ const mixins = {
   `,
 
   flexStart: css`
-  display: flex;
-  align-items: flex-end;
-`,
+    display: flex;
+    align-items: flex-end;
+  `,
 
   flexBetween: css`
     display: flex;
@@ -40,33 +40,33 @@ const mixins = {
   `,
 
   inlineLink: css`
-  display: inline-block;
-  text-decoration-skip-ink: auto;
-  position: relative;
-  transition: ${theme.transition};
-  cursor: pointer;
-  &:hover,
-  &:focus,
-  &:active {
-    color: ${colors.green};
-    outline: 0;
-    &:after {
-      width: 100%;
-    }
-    & > * {
-      color: ${colors.green} !important;
-      transition: ${theme.transition};
-    }
-  }
-  &:after {
-    background-color: ${colors.lightSlate};
+    display: inline-block;
+    text-decoration-skip-ink: auto;
+    position: relative;
     transition: ${theme.transition};
-    opacity: 0.5;
-  }
+    cursor: pointer;
+    &:hover,
+    &:focus,
+    &:active {
+      color: ${colors.green};
+      outline: 0;
+      &:after {
+        width: 100%;
+      }
+      & > * {
+        color: ${colors.green} !important;
+        transition: ${theme.transition};
+      }
+    }
+    &:after {
+      background-color: ${colors.lightSlate};
+      transition: ${theme.transition};
+      opacity: 0.5;
+    }
   `,
 
   smallButton: css`
-  background-color: ${colors.lightSlate};
+    background-color: ${colors.lightSlate};
     border: 1px solid ${colors.black};
     border-radius: ${theme.borderRadius};
     padding: 0.75rem 1rem;
@@ -122,7 +122,7 @@ const mixins = {
   `,
 
   fancyList: css`
-  color: ${colors.navy};
+    color: ${colors.navy};
     padding: 0;
     margin: 0;
     list-style: none;
@@ -133,13 +133,13 @@ const mixins = {
       padding-left: 30px;
       margin-bottom: 10px;
       &:before {
-        content: '▹';
+        content: "▹";
         position: absolute;
         left: 0;
         color: ${colors.navy};
       }
     }
   `,
-};
+}
 
-export default mixins;
+export default mixins

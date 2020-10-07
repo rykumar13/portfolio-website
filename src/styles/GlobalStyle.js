@@ -1,7 +1,7 @@
-import { createGlobalStyle } from 'styled-components';
-import mixins from './mixins';
-import theme from './theme';
-const { colors } = theme;
+import { createGlobalStyle } from "styled-components"
+import mixins from "./mixins"
+import theme from "./theme"
+const { colors } = theme
 
 const GlobalStyle = createGlobalStyle`
 
@@ -219,6 +219,6 @@ const GlobalStyle = createGlobalStyle`
     height: 100%;
   }
 
-`;
+`
 
-export default GlobalStyle;
+export default GlobalStyle
