@@ -10,7 +10,7 @@ skills:
   - Java 8
 ---
 
-Hello! I'm Rajiv, a software engineer based in London, UK.
+Hello! I'm Rajiv, a software engineer based from New Zealand currently based in London.
 
 I enjoy using new technologies to build websites & applications that deliver value to my clients. 
 
