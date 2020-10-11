@@ -10,6 +10,9 @@ const StyledContainer = styled(Section)`
   flex-direction: column;
   align-items: flex-start;
   min-height: 100vh;
+  @media(max-width: 48em) {
+    padding-top: 150px;
+  }
 `
 
 const StyledOverline = styled.h1`
@@ -17,20 +20,48 @@ const StyledOverline = styled.h1`
   font-size: ${fontSizes.md};
   font-weight: normal;
   margin: 0 0 20px 3px;
+  @media(max-width: 63em) {
+    font-size: ${fontSizes.sm};
+  }
+  @media(max-width: 48em) {
+    font-size: ${fontSizes.smish};
+  }
 `
 
 const StyledTitle = styled.h2`
-  font-family: ${fonts.SFMono};
   font-size: 80px;
   line-height: 1.1;
   margin: 0;
+  @media(max-width: 63em) {
+    font-size: 70px;
+  }
+  @media(max-width: 48em) {
+    font-size: 60px;
+  }
+  @media(max-width: 30em) {
+    font-size: 50px;
+  }
+  @media(max-width: 24em) {
+    font-size: 40px;
+  }
 `
 
 const StyledSubtitle = styled.h3`
-  font-family: ${fonts.SFMono};
   font-size: 70px;
   font-weight: normal;
   line-height: 1.1;
+  @media(max-width: 63em) {
+    font-size: 70px;
+  }
+  @media(max-width: 48em) {
+    font-size: 60px;
+  }
+  @media(max-width: 30em) {
+    font-size: 50px;
+  }
+  @media(max-width: 24em) {
+    font-size: 40px;
+  }
 `
 
 const StyledDescription = styled.div`

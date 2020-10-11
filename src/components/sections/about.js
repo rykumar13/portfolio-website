@@ -14,12 +14,19 @@ const StyledFlexContainer = styled.div`
   ${mixins.flexBetween};
   margin-top: 0px;
   align-items: flex-start;
+
+  @media(max-width: 48em) {
+    display: block;
+  }
 `
 
 const StyledContent = styled.div`
   font-family: ${fonts.Calibre};
   width: 60%;
   max-width: 500px;
+  @media(max-width: 48em) {
+    width: 100%;
+  }
   a {
     ${mixins.inlineLink};
   }
@@ -56,6 +63,12 @@ const StyledPic = styled.div`
   width: 40%;
   max-width: 300px;
   margin-left: 60px;
+  @media(max-width: 48em) {
+    margin: 60px auto 0;
+  }
+  @media(max-width: 30em) {
+    width: 70%;
+  }
   a {
     &:focus {
       outline: 0;

@@ -12,6 +12,12 @@ const StyledContainer = styled.div`
   right: ${props => (props.orientation === 'left' ? 'auto' : '40px')};
   z-index: 10;
   color: ${colors.lightSlate};
+  @media(max-width: 63em) {
+    right: 25px;
+  }
+  @media(max-width: 48em) {
+    display: none;
+  }
 `;
 
 const Side = ({ children, orientation }) => {

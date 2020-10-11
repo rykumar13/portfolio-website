@@ -110,6 +110,17 @@ const mixins = {
 
   sidePadding: css`
     padding: 0 150px;
+    @media(max-width: 63em) {
+      padding: 0 100px;
+    }
+
+    @media(max-width: 48em) {
+      padding: 0 50px;
+    }
+    
+    @media(max-width: 30em) {
+      padding: 0 25px;
+    }
   `,
 
   boxShadow: css`
