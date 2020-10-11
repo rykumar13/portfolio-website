@@ -51,19 +51,6 @@ const StyledEmailLink = styled.a`
 const Hero = ({ data }) => {
   const { frontmatter, html } = data[0].node
 
-  const one = () => <StyledOverline>{frontmatter.title}</StyledOverline>
-  const two = () => <StyledTitle>{frontmatter.name}.</StyledTitle>
-  const three = () => <StyledSubtitle>{frontmatter.subtitle}</StyledSubtitle>
-
-  const four = () => (
-    <StyledDescription dangerouslySetInnerHTML={{ __html: html }} />
-  )
-  const five = () => (
-    <div>
-      <StyledEmailLink href={`mailto:${email}`}>Get In Touch</StyledEmailLink>
-    </div>
-  )
-
   return (
     <StyledContainer>
       <StyledOverline>{frontmatter.title}</StyledOverline>

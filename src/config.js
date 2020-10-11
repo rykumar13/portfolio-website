@@ -51,6 +51,5 @@ colors: {
   navy: '#0a192f',
   darkNavy: '#020c1b',
   lightNavy: '#172a45',
-  salmon: '#FA8072',
 },
 }

@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react"
+import React, { useState, useRef } from "react"
 import PropTypes from "prop-types"
 import styled from "styled-components"
 import { theme, mixins, Section, Heading } from "@styles"
@@ -101,21 +101,6 @@ const Experience = ({ data }) => {
   const tabs = useRef([])
 
   const revealContainer = useRef(null)
-
-  const focusTab = () => {
-    if (tabs.current[tabFocus]) {
-      tabs.current[tabFocus].focus()
-    } else {
-      // If we're at the end, go to the start
-      if (tabFocus >= tabs.current.length) {
-        setTabFocus(0)
-      }
-      // If we're at the start, move to the end
-      if (tabFocus < 0) {
-        setTabFocus(tabs.current.length - 1)
-      }
-    }
-  }
 
   const onKeyPressed = e => {
     if (e.keyCode === 38 || e.keyCode === 40) {
