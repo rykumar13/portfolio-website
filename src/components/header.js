@@ -11,6 +11,12 @@ const StyledContainer = styled.div`
   ${mixins.flexBetween};
   background-color: ${colors.white};
   height: 80px;
+  @media(max-width: 63em) {
+    padding: 0 40px;
+  }
+  @media(max-width: 48em) {
+    padding: 0 25px;
+  }
 `
 
 const NavList = styled.ol`
@@ -55,6 +61,13 @@ const StyledLogo = styled.div`
     }
   }
 `
+const StyledLink = styled.div`
+  display: flex;
+  align-items: center;
+  @media(max-width: 48em) {
+    display: none;
+  }
+`;
 
 const Header = () => {
   return (
@@ -65,6 +78,7 @@ const Header = () => {
             <IconLogo />
           </a>
         </StyledLogo>
+        <StyledLink>
         <NavList>
           {navLinks.map(({ url, name }) => (
             <NavListItem>
@@ -82,6 +96,7 @@ const Header = () => {
             </NavListItem>
           ))}
         </NavList>
+
         <StyledResumeButton
           href="/resume.pdf"
           target="_blank"
@@ -89,6 +104,7 @@ const Header = () => {
         >
           Resume
         </StyledResumeButton>
+        </StyledLink>
       </StyledContainer>
     </Headroom>
   )
