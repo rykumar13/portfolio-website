@@ -22,6 +22,8 @@ const theme = {
       "Calibre, San Francisco, SF Pro Text, -apple-system, system-ui, BlinkMacSystemFont, Roboto, Helvetica Neue, Segoe UI, Arial, sans-serif",
     SFMono:
       "SF Mono, Fira Code, Fira Mono, Roboto Mono, Lucida Console, Monaco, monospace",
+    Roboto_Condensed:
+      "Roboto_Condensed, SF Mono, Fira Code, Fira Mono, Roboto Mono, Lucida Console, Monaco, monospace",
   },
 
   fontSizes: {

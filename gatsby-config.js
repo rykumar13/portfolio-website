@@ -12,7 +12,6 @@ module.exports = {
   {
     resolve: `gatsby-plugin-styled-components`,
     options: {
-      // Add any options here
     },
   },
   {
@@ -34,7 +33,7 @@ module.exports = {
   {
     resolve: `gatsby-plugin-manifest`,
     options: {
-      name: `gatsby-starter-default`,
+      name: `portfolio-website`,
       short_name: `starter`,
       start_url: `/`,
       background_color: `#663399`,
