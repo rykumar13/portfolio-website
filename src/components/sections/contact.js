@@ -17,13 +17,18 @@ const StyledContainer = styled(Section)`
 const StyledHeading = styled(Heading)`
   display: block;
   font-size: ${fontSizes.md};
-  font-family: ${fonts.SFMono};
   font-weight: normal;
   margin-bottom: 20px;
   justify-content: center;
+  @media(max-width: 63em) {
+    font-size: ${fontSizes.sm};
+  }
   &:before {
     bottom: 0;
     font-size: ${fontSizes.sm};
+    @media(max-width: 63em) {
+      font-size: ${fontSizes.smish};
+    }
   }
   &:after {
     display: none;
@@ -33,7 +38,12 @@ const StyledHeading = styled(Heading)`
 const StyledTitle = styled.h4`
   margin: 0px 0px 20px;
   font-size: 60px;
-  font-family: ${fonts.SFMono};
+  @media(max-width: 63em) {
+    font-size: 50px;
+  }
+  @media(max-width: 48em) {
+    font-size: 40px;
+  }
 `
 
 const StyledEmailLink = styled.a`

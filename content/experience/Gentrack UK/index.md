@@ -1,7 +1,7 @@
 ---
 date: '2020-10-04'
 title: 'Software Engineer'
-company: 'Gentrack UK Ltd'
+company: 'Gentrack London UK'
 location: 'London, UK'
 range: 'April 2019 - Present'
 url: 'https://www.gentrack.com'

@@ -1,10 +1,10 @@
 import styled from "styled-components"
 
 const Section = styled.section`
-  margin: auto;
-  padding: 100px 0px 150px 0px;
+  margin: 0 auto;
+  padding: 150px 0;
   max-width: 1000px;
-  @media(max-width: 30em) {
+  @media(max-width: 48em) {
     padding: 100px 0;
   }
 `
