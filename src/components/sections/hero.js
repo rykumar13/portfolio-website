@@ -6,12 +6,16 @@ import PropTypes from "prop-types"
 const { fontSizes, fonts } = theme
 
 const StyledContainer = styled(Section)`
+padding: 60px 0;
   ${mixins.flexCenter};
   flex-direction: column;
   align-items: flex-start;
   min-height: 100vh;
   @media(max-width: 48em) {
-    padding-top: 150px;
+    padding-top: 00px;
+  }
+  div {
+    width: 100%;
   }
 `
 

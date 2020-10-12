@@ -12,9 +12,7 @@ const StyledContainer = styled(Section)`
 
 const StyledFlexContainer = styled.div`
   ${mixins.flexBetween};
-  margin-top: 0px;
   align-items: flex-start;
-
   @media(max-width: 48em) {
     display: block;
   }
@@ -24,7 +22,7 @@ const StyledContent = styled.div`
   font-family: ${fonts.Calibre};
   font-size: ${fontSizes.lg};
   width: 60%;
-  max-width: 500px;
+  max-width: 480px;
   @media(max-width: 48em) {
     width: 100%;
   }

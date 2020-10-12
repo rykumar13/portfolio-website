@@ -9,6 +9,7 @@ const { colors, fontSizes, fonts } = theme
 
 const StyledContainer = styled.div`
   ${mixins.flexBetween};
+  top: 0;
   background-color: ${colors.white};
   height: 80px;
   @media(max-width: 63em) {

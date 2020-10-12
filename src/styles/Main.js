@@ -7,8 +7,8 @@ const Main = styled.main`
   width: 100%;
   max-width: 1600px;
   min-height: 100vh;
-  padding-top: 0px;
-  padding-bottom: 20px;
+  padding-top: 200px;
+  padding-bottom: 200px;
 
 @media(max-width: 63em) {
   padding-top: 200px;
@@ -28,6 +28,7 @@ const Main = styled.main`
 &.fillHeight {
   padding-top: 0;
   padding-bottom: 0;
+
   @media(max-width: 63em) {
     padding-top: 0;
     padding-bottom: 0;
