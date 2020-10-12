@@ -1,7 +1,7 @@
 import { createGlobalStyle } from "styled-components"
 import mixins from "./mixins"
 import theme from "./theme"
-const { colors } = theme
+const { colors, fontSizes } = theme
 
 const GlobalStyle = createGlobalStyle`
 
@@ -24,6 +24,9 @@ const GlobalStyle = createGlobalStyle`
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     line-height: 1.3;
+    @media(max-width: 30em) {
+      font-size: ${fontSizes.lg};
+    }
   }
 
   #root {
@@ -48,12 +51,30 @@ const GlobalStyle = createGlobalStyle`
       font-size: 80px;
       line-height: 1.1;
       margin: 0;
+      @media(max-width: 63em) {
+        font-size: 70px;
+      }
+      @media(max-width: 48em) {
+        font-size: 60px;
+      }
+      @media(max-width: 30em) {
+        font-size: 50px;
+      }
+      @media(max-width: 24em) {
+        font-size: 40px;
+      }
     }
 
     &.medium-title {
       font-size: 60px;
       line-height: 1.1;
       margin: 0;
+      @media(max-width: 63em) {
+        font-size: 50px;
+      }
+      @media(max-width: 48em) {
+        font-size: 40px;
+      }
     }
   }
 
@@ -188,6 +209,12 @@ const GlobalStyle = createGlobalStyle`
     margin: 0 0 20px 0;
     font-weight: normal;
     line-height: 1.5;
+    @media(max-width: 63em) {
+      font-size: ${fontSizes.sm};
+    }
+    @media(max-width: 48em) {
+      font-size: ${fontSizes.smish};
+    }
 
     a {
       ${mixins.inlineLink};

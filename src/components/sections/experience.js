@@ -11,12 +11,11 @@ const StyledContainer = styled(Section)`
 
 const StyledTabs = styled.div`
   display: flex;
-  margin-top: 50px;
   align-items: flex-start;
   position: relative;
-@media(max-width: 38em) {
-  display: block;
-}
+  @media (max-width: 38em) {
+    display: block;
+  }
 `
 const StyledTabList = styled.ul`
   display: block;
@@ -26,37 +25,38 @@ const StyledTabList = styled.ul`
   padding: 0;
   margin: 0;
   list-style: none;
-  @media(max-width: 38em) {
+  
+  @media (max-width: 38em) {
     display: flex;
     overflow-x: scroll;
     margin-bottom: 30px;
     width: calc(100% + 100px);
     margin-left: -50px;
   }
-@media(max-width: 30em) {
-  width: calc(100% + 50px);
-  margin-left: -40px;
-}
+  @media (max-width: 30em) {
+    width: calc(100% + 50px);
+    margin-left: -40px;
+  }
 
-li {
-  &:first-of-type {
-    @media(max-width: 38em) {
-      margin-left: 50px;
+  li {
+    &:first-of-type {
+      @media (max-width: 38em) {
+        margin-left: 50px;
+      }
+      @media (max-width: 30em) {
+        margin-left: 25px;
+      }
     }
-    @media(max-width: 30em) {
-      margin-left: 25px;
+    &:last-of-type {
+      @media (max-width: 38em) {
+        padding-right: 50px;
+      }
+      @media (max-width: 30em) {
+        padding-right: 25px;
+      }
     }
   }
-  &:last-of-type {
-    @media(max-width: 38em) {
-      padding-right: 50px;
-    }
-    @media(max-width: 30em) {
-      padding-right: 25px;
-    }
-  }
-}
-`;
+`
 
 const StyledTabButton = styled.button`
   ${mixins.link};
@@ -73,10 +73,10 @@ const StyledTabButton = styled.button`
   font-family: ${fonts.SFMono};
   font-size: ${fontSizes.smish};
   color: ${props => (props.isActive ? colors.green : colors.black)};
-  @media(max-width: 48em) {
+  @media (max-width: 48em) {
     padding: 0 15px 2px;
   }
-  @media(max-width: 38em) {
+  @media (max-width: 38em) {
     ${mixins.flexCenter};
     padding: 0 15px;
     text-align: center;
@@ -104,20 +104,21 @@ const StyledHighlight = styled.span`
     ${props =>
       props.activeTabId > 0 ? props.activeTabId * theme.tabHeight : 0}px
   );
-@media(max-width: 38em) {
-  width: 100%;
-  max-width: ${theme.tabWidth}px;
-  height: 2px;
-  top: auto;
-  bottom: 0;
-  transform: translateX(
-    ${props => (props.activeTabId > 0 ? props.activeTabId * theme.tabWidth : 0)}px
-  );
-  margin-left: 50px;
-}
-@media(max-width: 30em) {
-  margin-left: 25px;
-}
+  @media (max-width: 38em) {
+    width: 100%;
+    max-width: ${theme.tabWidth}px;
+    height: 2px;
+    top: auto;
+    bottom: 0;
+    transform: translateX(
+      ${props =>
+        props.activeTabId > 0 ? props.activeTabId * theme.tabWidth : 0}px
+    );
+    margin-left: 50px;
+  }
+  @media (max-width: 30em) {
+    margin-left: 25px;
+  }
 `
 
 const StyledTabContent = styled.div`
@@ -126,10 +127,10 @@ const StyledTabContent = styled.div`
   height: auto;
   padding-top: 12px;
   padding-left: 30px;
-  @media(max-width: 48em) {
+  @media (max-width: 48em) {
     padding-left: 20px;
   }
-  @media(max-width: 38em) {
+  @media (max-width: 38em) {
     padding-left: 0;
   }
   ul {
