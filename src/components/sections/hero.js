@@ -67,7 +67,7 @@ const StyledSubtitle = styled.h3`
 const StyledDescription = styled.div`
   font-family: ${fonts.Calibre};
   margin-top: 25px;
-  width: 50%;
+  // width: 50%;
   max-width: 500px;
   a {
     ${mixins.inlineLink};
