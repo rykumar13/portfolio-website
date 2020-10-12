@@ -22,6 +22,7 @@ const StyledFlexContainer = styled.div`
 
 const StyledContent = styled.div`
   font-family: ${fonts.Calibre};
+  font-size: ${fontSizes.lg};
   width: 60%;
   max-width: 500px;
   @media(max-width: 48em) {

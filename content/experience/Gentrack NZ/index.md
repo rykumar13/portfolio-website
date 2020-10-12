@@ -1,7 +1,7 @@
 ---
 date: '2019-03-31'
 title: 'Analyst Programmer'
-company: 'Gentrack NZ Ltd'
+company: 'Gentrack Auckland NZ'
 location: 'Auckland, NZ'
 range: 'July 2015 - March 2019'
 url: 'https://www.gentrack.com'
