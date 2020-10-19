@@ -8,7 +8,9 @@ import Headroom from "react-headroom"
 const { colors, fontSizes, fonts } = theme
 
 const StyledContainer = styled.div`
-  ${mixins.flexBetween};
+display: flex;
+justify-content: space-between;
+align-items: center;
   top: 0;
   background-color: ${colors.white};
   height: 80px;
@@ -38,9 +40,14 @@ const MenuLink = styled.a`
 `
 
 const StyledResumeButton = styled.a`
-  ${mixins.smallButton};
+display: flex;
+align-items: center;
+${mixins.smallButton};
   font-size: ${fontSizes.smish};
-  margin: 45px 50px 50px 50px;
+  margin: 40px 50px 50px 50px;
+  @media(max-width: 48em) {
+    margin: 40px -10px 50px 50px;
+  }
 `
 
 const StyledLogo = styled.div`
@@ -60,6 +67,10 @@ const StyledLogo = styled.div`
       transition: ${theme.transition};
       user-select: none;
     }
+  }
+  @media(max-width: 48em) {
+    margin: 45px 50px 50px 50px;
+    margin-left: -15px
   }
 `
 const StyledLink = styled.div`
@@ -97,7 +108,7 @@ const Header = () => {
             </NavListItem>
           ))}
         </NavList>
-
+        </StyledLink>
         <StyledResumeButton
           href="/resume.pdf"
           target="_blank"
@@ -105,7 +116,6 @@ const Header = () => {
         >
           Resume
         </StyledResumeButton>
-        </StyledLink>
       </StyledContainer>
     </Headroom>
   )
