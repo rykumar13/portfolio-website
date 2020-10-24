@@ -10,7 +10,7 @@ padding: 60px 0;
   ${mixins.flexCenter};
   flex-direction: column;
   align-items: flex-start;
-  min-height: 100vh;
+  min-height: 90vh;
   @media(max-width: 48em) {
     padding-top: 00px;
   }
@@ -80,7 +80,7 @@ const StyledDescription = styled.div`
 
 const StyledEmailLink = styled.a`
   ${mixins.bigButton};
-  margin-top: 50px;
+  margin-top: 20px;
 `
 
 const Hero = ({ data }) => {
