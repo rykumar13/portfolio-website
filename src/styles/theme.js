@@ -15,6 +15,15 @@ const theme = {
     green: ACCENT,
     black: "#000000",
     backgroun_grey: "#EAECEE",
+    // 
+    // New Theme
+
+    bg_green: '#5cdb95',
+    bg_lightGreen: '#8EE4AF',
+    bg_greyGreen: '#379683',
+    bg_darkGreen: '#003F3E',
+    cream_text: '#EDF5E1',
+    navy_text: '#05386B',
   },
 
   fonts: {

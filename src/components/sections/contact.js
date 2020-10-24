@@ -6,7 +6,7 @@ import { theme, mixins, Section, Heading } from "@styles"
 const { fontSizes, fonts, colors } = theme
 
 const StyledContainer = styled(Section)`
-  color: ${colors.lightestSlate};
+  color: ${colors.cream_text};
   text-align: center;
   max-width: 600px;
   margin: 0 auto 100px;

@@ -6,13 +6,12 @@ import PropTypes from "prop-types"
 const { fontSizes, fonts, colors } = theme
 
 const StyledContainer = styled(Section)`
-color: ${colors.lightestSlate};
-padding: 60px 0;
+  padding: 60px 0;
   ${mixins.flexCenter};
   flex-direction: column;
   align-items: flex-start;
   min-height: 90vh;
-  @media(max-width: 48em) {
+  @media (max-width: 48em) {
     padding-top: 00px;
   }
   div {
@@ -23,54 +22,58 @@ padding: 60px 0;
 const StyledOverline = styled.h1`
   font-family: ${fonts.SFMono};
   font-size: ${fontSizes.md};
+  color: ${colors.cream_text};
   font-weight: normal;
   margin: 0 0 20px 3px;
-  @media(max-width: 63em) {
+  @media (max-width: 63em) {
     font-size: ${fontSizes.sm};
   }
-  @media(max-width: 48em) {
+  @media (max-width: 48em) {
     font-size: ${fontSizes.smish};
   }
 `
 
 const StyledTitle = styled.h2`
+  color: ${colors.cream_text};
   font-size: 80px;
   line-height: 1.1;
   margin: 0;
-  @media(max-width: 63em) {
+  @media (max-width: 63em) {
     font-size: 70px;
   }
-  @media(max-width: 48em) {
+  @media (max-width: 48em) {
     font-size: 60px;
   }
-  @media(max-width: 30em) {
+  @media (max-width: 30em) {
     font-size: 50px;
   }
-  @media(max-width: 24em) {
+  @media (max-width: 24em) {
     font-size: 40px;
   }
 `
 
 const StyledSubtitle = styled.h3`
+  color: ${colors.cream_text};
   font-size: 70px;
   font-weight: normal;
   line-height: 1.1;
-  @media(max-width: 63em) {
+  @media (max-width: 63em) {
     font-size: 70px;
   }
-  @media(max-width: 48em) {
+  @media (max-width: 48em) {
     font-size: 60px;
   }
-  @media(max-width: 30em) {
+  @media (max-width: 30em) {
     font-size: 50px;
   }
-  @media(max-width: 24em) {
+  @media (max-width: 24em) {
     font-size: 40px;
   }
 `
 
 const StyledDescription = styled.div`
   font-family: ${fonts.Calibre};
+  color: ${colors.cream_text};
   margin-top: 25px;
   // width: 50%;
   max-width: 500px;

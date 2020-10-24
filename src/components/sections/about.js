@@ -7,9 +7,9 @@ import { theme, mixins, Section, Heading } from "@styles"
 const { colors, fontSizes, fonts } = theme
 
 const StyledContainer = styled(Section)`
-color: ${colors.lightestSlate};
+color: ${colors.cream_text};
   position: relative;
-`
+` 
 
 const StyledFlexContainer = styled.div`
   ${mixins.flexBetween};
@@ -47,12 +47,12 @@ const Skill = styled.li`
   padding-left: 20px;
   font-family: ${fonts.Calibre};
   font-size: ${fontSizes.sm};
-  color: ${colors.black};
+  color: ${colors.cream_text};
   &:before {
     content: "▹";
     position: absolute;
     left: 0;
-    color: ${colors.black};
+    color: ${colors.navy_text};
     font-size: ${fontSizes.sm};
     line-height: 12px;
   }

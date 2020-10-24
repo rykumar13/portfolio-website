@@ -31,11 +31,10 @@ const StyledProjectInner = styled.div`
   height: 100%;
   border-radius: ${theme.borderRadius};
   transition: ${theme.transition};
-  background-color: ${colors.lightestSlate};
+  background-color: ${colors.navy};
+  color: ${colors.cream_text};
   &:hover,
   &:focus {
-    background-color: ${colors.navy};
-    color: ${colors.green};
   }
 `
 
@@ -57,7 +56,7 @@ const StyledProjectHeader = styled.div`
 `
 
 const StyledFolder = styled.div`
-  color: ${colors.green};
+  color: ${colors.cream_text};
   svg {
     width: 40px;
     height: 40px;
@@ -110,6 +109,7 @@ const StyledTechList = styled.ul`
 `
 
 const ProjectsHeading = styled.h3`
+  color: ${colors.cream_text};
   position: relative;
   display: flex;
   align-items: center;
