@@ -24,7 +24,6 @@ const StyledContainer = styled.div`
 `
 
 const NavList = styled.ol`
-  color: ${colors.navy};
   color: ${colors.cream_text};
   ${mixins.flexBetween};
   list-style-type: none;
@@ -32,7 +31,7 @@ const NavList = styled.ol`
 `
 
 const NavListItem = styled.li`
-  margin: 35px 0px 35px 35px;
+  margin: 35px 0px 35px 55px;
   position: relative;
   font-size: ${fontSizes.smish};
 `
