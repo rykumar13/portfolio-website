@@ -3,9 +3,10 @@ import { email } from "@config"
 import styled from "styled-components"
 import { mixins, Section, theme } from "@styles"
 import PropTypes from "prop-types"
-const { fontSizes, fonts } = theme
+const { fontSizes, fonts, colors } = theme
 
 const StyledContainer = styled(Section)`
+color: ${colors.lightestSlate};
 padding: 60px 0;
   ${mixins.flexCenter};
   flex-direction: column;

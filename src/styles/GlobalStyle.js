@@ -6,6 +6,7 @@ const { colors, fontSizes } = theme
 const GlobalStyle = createGlobalStyle`
 
   html {
+    background-color: ${colors.black};
     box-sizing: border-box;
     width: 100%;
   }

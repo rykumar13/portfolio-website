@@ -7,13 +7,14 @@ import { theme, mixins, Section, Heading } from "@styles"
 const { colors, fontSizes, fonts } = theme
 
 const StyledContainer = styled(Section)`
+color: ${colors.lightestSlate};
   position: relative;
 `
 
 const StyledFlexContainer = styled.div`
   ${mixins.flexBetween};
   align-items: flex-start;
-  @media(max-width: 48em) {
+  @media (max-width: 48em) {
     display: block;
   }
 `
@@ -23,7 +24,7 @@ const StyledContent = styled.div`
   font-size: ${fontSizes.lg};
   width: 60%;
   max-width: 480px;
-  @media(max-width: 48em) {
+  @media (max-width: 48em) {
     width: 100%;
   }
   a {
@@ -62,10 +63,10 @@ const StyledPic = styled.div`
   width: 40%;
   max-width: 300px;
   margin-left: 60px;
-  @media(max-width: 48em) {
+  @media (max-width: 48em) {
     margin: 60px auto 0;
   }
-  @media(max-width: 30em) {
+  @media (max-width: 30em) {
     width: 70%;
   }
   a {

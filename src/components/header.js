@@ -12,7 +12,8 @@ const StyledContainer = styled.div`
   justify-content: space-between;
   align-items: center;
   top: 0;
-  background-color: ${colors.white};
+  // background-color: ${colors.white};
+  background-color: ${colors.black};
   height: 80px;
   @media (max-width: 63em) {
     padding: 0 40px;
@@ -23,6 +24,7 @@ const StyledContainer = styled.div`
 `
 
 const NavList = styled.ol`
+color: ${colors.white};
   ${mixins.flexBetween};
   list-style-type: none;
   margin-top: 15px;
