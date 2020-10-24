@@ -17,6 +17,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body {
+    background-color: ${colors.bg_greyGreen};
     margin: 0;
     width: 100%;
     min-height: 100%;
@@ -98,7 +99,7 @@ const GlobalStyle = createGlobalStyle`
 
   a {
     display: inline-block;
-    text-decoration: underline;
+    text-decoration: none;
     text-decoration-skip-ink: auto;
     color: inherit;
     position: relative;
@@ -106,7 +107,7 @@ const GlobalStyle = createGlobalStyle`
 
     &:hover,
     &:focus {
-      color: ${colors.green};
+      color: ${colors.navy_text};
     }
   }
 

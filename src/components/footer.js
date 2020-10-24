@@ -45,7 +45,7 @@ const StyledMetadata = styled.div`
 `;
 
 const StyledGitHubLink = styled.a`
-  color: ${colors.lightSlate};
+  color: ${colors.cream_text};
   padding: 10px;
 `;
 

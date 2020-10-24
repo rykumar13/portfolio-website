@@ -30,20 +30,20 @@ socialMedia: [
 ],
 navLinks: [
   {
-    name: 'About',
-    url: 'about',
+    name: 'ABOUT',
+    url: '#about',
   },
   {
-    name: 'Experience',
-    url: 'experience',
+    name: 'EXPERIENCE',
+    url: '#experience',
   },
   {
-    name: 'Projects',
-    url: 'projects',
+    name: 'PROJECTS',
+    url: '#projects',
   },
   {
-    name: 'Contact',
-    url: 'contact',
+    name: 'CONTACT',
+    url: '#contact',
   },
 ],
 colors: {
@@ -51,5 +51,6 @@ colors: {
   navy: '#0a192f',
   darkNavy: '#020c1b',
   lightNavy: '#172a45',
+  bg_green: '#5cdb95',
 },
 }

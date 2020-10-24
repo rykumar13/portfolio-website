@@ -5,10 +5,10 @@ const IconLogo = () => (
       <title>Logo</title>
       <g transform="translate(-8.000000, -2.000000)">
       <g transform="translate(11.000000, 5.000000)">
-  <text x="27" y="56" font-size="2em" fill="black" >R</text>
+  <text x="27" y="56" font-size="2em" fill="#EDF5E1" >R</text>
   <polygon
           id="Shape"
-          stroke="currentColor"
+          stroke="#EDF5E1"
           strokeWidth="5"
           strokeLinecap="round"
           strokeLinejoin="round"

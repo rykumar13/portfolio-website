@@ -5,6 +5,7 @@ import { theme, mixins, Section, Heading } from "@styles"
 const { colors, fontSizes, fonts } = theme
 
 const StyledContainer = styled(Section)`
+  color: ${colors.cream_text};
   position: relative;
   max-width: 700px;
 `
@@ -25,7 +26,7 @@ const StyledTabList = styled.ul`
   padding: 0;
   margin: 0;
   list-style: none;
-  
+
   @media (max-width: 38em) {
     display: flex;
     overflow-x: scroll;
@@ -60,6 +61,7 @@ const StyledTabList = styled.ul`
 
 const StyledTabButton = styled.button`
   ${mixins.link};
+  color: ${colors.cream_text};
   display: flex;
   align-items: center;
   width: 100%;
@@ -72,7 +74,7 @@ const StyledTabButton = styled.button`
   white-space: nowrap;
   font-family: ${fonts.SFMono};
   font-size: ${fontSizes.smish};
-  color: ${props => (props.isActive ? colors.green : colors.black)};
+  color: ${props => (props.isActive ? colors.cream_text : colors.black)};
   @media (max-width: 48em) {
     padding: 0 15px 2px;
   }
@@ -135,6 +137,7 @@ const StyledTabContent = styled.div`
   }
   ul {
     ${mixins.fancyList};
+    color: ${colors.cream_text};
   }
   a {
     ${mixins.inlineLink};

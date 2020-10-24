@@ -8,11 +8,12 @@ import Headroom from "react-headroom"
 const { colors, fontSizes, fonts } = theme
 
 const StyledContainer = styled.div`
+  box-shadow: -10px 0px 30px -15px ${colors.navy_text};
+  background-color: ${colors.bg_greyGreen};
   display: flex;
   justify-content: space-between;
   align-items: center;
   top: 0;
-  background-color: ${colors.white};
   height: 80px;
   @media (max-width: 63em) {
     padding: 0 40px;
@@ -23,6 +24,8 @@ const StyledContainer = styled.div`
 `
 
 const NavList = styled.ol`
+  color: ${colors.navy};
+  color: ${colors.cream_text};
   ${mixins.flexBetween};
   list-style-type: none;
   margin-top: 15px;
@@ -37,6 +40,7 @@ const NavListItem = styled.li`
 const MenuLink = styled.a`
   font-family: ${fonts.Calibre};
   font-size: ${fontSizes.lg};
+  font-weight: 650;
 `
 
 const StyledResumeButton = styled.a`
@@ -59,7 +63,7 @@ const StyledLogo = styled.div`
     &:hover,
     &:focus {
       svg {
-        fill: ${colors.transGreen};
+        fill: ${colors.cream_text};
       }
     }
     svg {

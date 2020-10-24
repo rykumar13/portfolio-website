@@ -34,7 +34,7 @@ const mixins = {
     &:hover,
     &:active,
     &:focus {
-      color: ${colors.green};
+      color: ${colors.cream_text};
       outline: 0;
     }
   `,
@@ -66,7 +66,8 @@ const mixins = {
   `,
 
   smallButton: css`
-    background-color: ${colors.lightSlate};
+    background-color: ${colors.navy};
+    color: ${colors.cream_text};
     border: 1px solid ${colors.black};
     border-radius: ${theme.borderRadius};
     padding: 0.75rem 1rem;
@@ -79,7 +80,8 @@ const mixins = {
     &:hover,
     &:focus,
     &:active {
-      background-color: ${colors.navy};
+      background-color: ${colors.navy_text};
+      color: ${colors.green};
     }
     &:after {
       display: none !important;
@@ -87,7 +89,8 @@ const mixins = {
   `,
 
   bigButton: css`
-    background-color: ${colors.lightSlate};
+  color: ${colors.cream_text};
+    background-color: ${colors.navy};
     border: 1px solid ${colors.black};
     border-radius: ${theme.borderRadius};
     padding: 1.25rem 1.75rem;
@@ -100,8 +103,8 @@ const mixins = {
     &:hover,
     &:focus,
     &:active {
-      background-color: ${colors.navy};
-      // color: ${colors.transGreen};
+      background-color: ${colors.navy_text};
+      color: ${colors.green};
     }
     &:after {
       display: none !important;
@@ -110,15 +113,15 @@ const mixins = {
 
   sidePadding: css`
     padding: 0 150px;
-    @media(max-width: 63em) {
+    @media (max-width: 63em) {
       padding: 0 100px;
     }
 
-    @media(max-width: 48em) {
+    @media (max-width: 48em) {
       padding: 0 50px;
     }
-    
-    @media(max-width: 30em) {
+
+    @media (max-width: 30em) {
       padding: 0 25px;
     }
   `,
