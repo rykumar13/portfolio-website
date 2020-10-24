@@ -87,7 +87,7 @@ const Hero = ({ data }) => {
   const { frontmatter, html } = data[0].node
 
   return (
-    <StyledContainer>
+    <StyledContainer id="hero">
       <StyledOverline>{frontmatter.title}</StyledOverline>
       <StyledTitle>{frontmatter.name}.</StyledTitle>
       <StyledSubtitle>{frontmatter.subtitle}</StyledSubtitle>
