@@ -1,3 +1,4 @@
+export { default as Head } from './head';
 export { default as Hero } from './sections/hero';
 export { default as About } from './sections/about';
 export { default as Experience } from './sections/experience';

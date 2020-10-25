@@ -12,7 +12,7 @@ import styled from "styled-components"
 import { GlobalStyle } from "@styles"
 import Footer from "./footer"
 import Header from "./header"
-import { Email, Social } from "@components"
+import { Head, Email, Social } from "@components"
 import "./layout.css"
 
 const StyledContent = styled.div`
@@ -36,6 +36,8 @@ const Layout = ({ children }) => {
       `}
       render={({ site }) => (
         <div id="root">
+          <Head metadata={site.siteMetadata} />
+
           <GlobalStyle />
 
           <StyledContent>
