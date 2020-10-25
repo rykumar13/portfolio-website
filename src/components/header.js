@@ -119,7 +119,7 @@ const Header = () => {
           </NavList>
         </StyledLink>
         <StyledResumeButton
-          href="/static/resume.pdf"
+          href="/resume.pdf"
           target="_blank"
           rel="nofollow noopener noreferrer"
         >
