@@ -107,7 +107,7 @@ const GlobalStyle = createGlobalStyle`
 
     &:hover,
     &:focus {
-      color: ${colors.navy_text};
+      color: ${colors.navy};
     }
   }
 

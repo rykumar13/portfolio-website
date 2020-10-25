@@ -109,7 +109,6 @@ const StyledTechList = styled.ul`
 `
 
 const ProjectsHeading = styled.h3`
-  color: ${colors.cream_text};
   position: relative;
   display: flex;
   align-items: center;
