@@ -1,8 +1,8 @@
 <div align="center">
-  <img alt="Logo" src="https://raw.githubusercontent.com/bchiang7/v4/main/src/images/logo.png" width="100" />
+  <img alt="Logo" src="https://github.com/rykumar13/portfolio-website/blob/master/src/images/favicons/favicon-32x32.png?raw=true" />
 </div>
 <h1 align="center">
-  rajivkumar.netlify.com - v1
+  rajivkumar.netlify.com
 </h1>
 <p align="center">
   
