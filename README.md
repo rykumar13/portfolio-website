@@ -8,8 +8,10 @@
 <div align="center">
   <img alt="Logo" src="https://raw.githubusercontent.com/rykumar13/portfolio-website/master/src/images/website_screenshot.png" />
 </div>
-
+<br>
+<h2>
 Technologies used
+  </h2>
   <p> 
     <ul>
      <li>React</li>
@@ -18,8 +20,10 @@ Technologies used
      <li>Javascript ES6</li>
     </ul>
   </p>
-
+<br>
+<h2>
 🎨 Color Reference
+</h2>
 
 | Color          | Hex                                                                |
 | -------------- | ------------------------------------------------------------------ |
