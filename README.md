@@ -22,7 +22,7 @@ Technologies used
   </p>
 <br>
 <h2>
-🎨 Color Reference
+🎨 Colour Reference
 </h2>
 
 | Color          | Hex                                                                |
