@@ -1,5 +1,5 @@
 <div align="center">
-  <img alt="Logo" src="https://github.com/rykumar13/portfolio-website/blob/master/src/images/favicons/favicon-32x32.png?raw=true" />
+  <img alt="Logo" src="https://raw.githubusercontent.com/rykumar13/portfolio-website/master/src/images/favicons/favicon-32x32.png" />
 </div>
 <h1 align="center">
   rajivkumar.netlify.com
