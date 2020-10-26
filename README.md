@@ -8,7 +8,18 @@
 <div align="center">
   <img alt="Logo" src="https://raw.githubusercontent.com/rykumar13/portfolio-website/master/src/images/website_screenshot.png" />
 </div>
-## 🎨 Color Reference
+
+Technologies used
+  <p> 
+    <ul>
+     <li>React</li>
+     <li>Gatsby</li>
+     <li>Netlify</li>
+     <li>Javascript ES6</li>
+    </ul>
+  </p>
+
+🎨 Color Reference
 
 | Color          | Hex                                                                |
 | -------------- | ------------------------------------------------------------------ |
