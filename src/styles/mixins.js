@@ -59,7 +59,7 @@ const mixins = {
       }
     }
     &:after {
-      background-color: ${colors.lightSlate};
+      background-color: ${colors.cream_text};
       transition: ${theme.transition};
       opacity: 0.5;
     }
