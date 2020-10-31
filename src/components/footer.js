@@ -16,7 +16,7 @@ const StyledContainer = styled.footer`
 `;
 
 const StyledSocial = styled.div`
-  color: ${colors.lightSlate};
+  color: ${colors.cream_text};
   width: 100%;
   max-width: 270px;
   margin: 0 auto 10px;
