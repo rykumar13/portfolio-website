@@ -80,7 +80,7 @@ const StyledLogo = styled.div`
 const StyledLink = styled.div`
   display: flex;
   align-items: center;
-  @media (max-width: 48em) {
+  @media (max-width: 63em) {
     display: none;
   }
 `
