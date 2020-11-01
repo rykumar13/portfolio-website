@@ -1,9 +1,9 @@
 <h1 align="center">
-  rajivkumar.netlify.com
+  rajiv-portfolio.com
 </h1>
 <p align="center">
   
-  The first iteration of <a href="https://rajivkumar.netlify.com" target="_blank">rajivkumar.netlify.com</a> built with <a href="https://www.gatsbyjs.org/" target="_blank">Gatsby</a> and hosted with <a href="https://www.netlify.com/" target="_blank">Netlify</a>
+  The first iteration of <a href="https://rajiv-portfolio.com" target="_blank">rajiv-portfolio.com</a> built with <a href="https://www.gatsbyjs.org/" target="_blank">Gatsby</a> and hosted with <a href="https://www.netlify.com/" target="_blank">Netlify</a>
 </p>
 <div align="center">
   <img alt="Logo" src="https://raw.githubusercontent.com/rykumar13/portfolio-website/master/src/images/website_screenshot.png" />
