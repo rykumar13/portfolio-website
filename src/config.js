@@ -1,7 +1,7 @@
 module.exports = {
 siteTitle: 'Rajiv Kumar | Software Engineer',
 siteDescription:
-    'Site Description goes here',
+    'Rajiv Kumar is Software Engineer based in London, specialised in building back-end applications as well as designing websites and everything in between.',
   siteKeywords:
     'rajiv kumar, software engineering',
   siteUrl: 'https://localhost:8000',
