@@ -1,14 +1,15 @@
 ---
-date: '2020-09-09'
-title: 'Project 2'
-# github: 'https://github.com/rykumar13/portfolio-website'
-# external: 'https://github.com/rykumar13/portfolio-website'
+date: '2021-01-01'
+title: 'Food Chatbot Website'
+github: 'https://github.com/rykumar13/react-food-chatbot-website'
+external: 'https://github.com/rykumar13/react-food-chatbot-website'
 tech:
-  # - React
-  # - Gatsby
-  # - Netlify
-  # - Javascript ES6
+   - React
+   - Styled Components
+   - react-chatbot-kit
+   - zomato-api
+   - Javascript ES6
 showInProjects: true
 ---
 
-Coming soon...
+Chatbot to help you discover where to eat in Auckland. Powered by Zomato.
