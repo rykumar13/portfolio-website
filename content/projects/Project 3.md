@@ -2,7 +2,7 @@
 date: '2021-04-04'
 title: 'NZ News Website'
 github: 'https://github.com/rykumar13/react-news-website'
-external: 'https://github.com/rykumar13/react-news-website'
+external: 'https://daily-roundup.netlify.app/'
 tech:
    - React
    - AWS EC2
